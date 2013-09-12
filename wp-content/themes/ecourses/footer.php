@@ -29,7 +29,7 @@
 			<div id="footerContact">
 				<a href="http://www.jmls.edu"><img src="<?php bloginfo('template_directory'); ?>/images/jmlsLogoExtraSmall.png" style="margin-bottom:8px;" /></a><br />
 				315 S. Plymouth Court. Chicago, IL 60604<br />
-				Call us at 1.800.276.0003<br />
+				Call us at <!--1.800.276.0003-->1.866.460.2022<br />
 				Email us at <a href="mailto:ecourses@jmls.edu">ecourses@jmls.edu</a>
 			</div>
 		</div>
@@ -77,6 +77,24 @@
 
 	wp_footer();
 ?>
+
+<!-- Google Code for Remarketing tag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1002683811;
+var google_conversion_label = "itqTCO3XiQkQo_uO3gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1002683811/?value=0&amp;label=itqTCO3XiQkQo_uO3gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
 
 </body>
 </html>

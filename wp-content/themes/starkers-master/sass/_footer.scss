@@ -1,0 +1,191 @@
+footer {
+  clear: both;  
+  padding: 25px 0;
+  color: white;
+  background: url('../images/crossed_stripes.png') repeat;
+  border-top: 15px solid $light-gray; }
+  
+.footer-logo {
+  background: url('../images/logo-white-1.svg') no-repeat; 
+  width: 289px;
+  height: 34px;
+  @media (max-width: 360px) {
+    background: url('../images/logo-white-2.svg') no-repeat; 
+    width: 238px;
+    height: 30px; }
+  @media (max-width: 300px) {
+    background: url('../images/logo-white-3.svg') no-repeat; 
+    width: 191px;
+    height: 22px; }	}
+	
+.no-svg .footer-logo {
+  background: url('../images/logo-white-1.png') no-repeat; 
+  @media (max-width: 360px) {
+    background: url('../images/logo-white-2.png') no-repeat; }
+  @media (max-width: 300px) {
+    background: url('../images/logo-white-3.png') no-repeat; }}
+  
+.footer-programs {
+  margin-top: 10px;
+  font-size: .85em;
+  li {
+    @media (max-width: $bp3-break) {
+	  font-size: .9em;
+	  padding: 2px 0; } }
+    @media (max-width: $bp2-break) {
+      padding-bottom: 15px;
+	  border-bottom: 1px solid $alt-gray-3; } }
+	  
+// Contact section
+
+.footer-contact .grid-col {
+  @media (max-width: $bp4-break) {
+	padding-left: 0; } }
+	
+.footer-contact-wrap {
+  overflow: hidden;
+  @media (max-width: $bp4-break) {
+	margin-left: 6.5%; }
+  @media (max-width: $bp2-break) {
+	margin-top: 10px;
+    margin-left: 4.25em; }
+  @media (max-width: $bp1-break) {
+    margin-top: 0; } }  
+
+.footer-left-col, 
+.footer-mid-col, 
+.footer-right-col {
+  position: relative; }
+
+.footer-left-col {
+  left: 15%;
+  @media (max-width: $bp4-break) {
+    left: 3%; }
+  @media (max-width: $bp2-break) {
+    display: none;
+    height: 0; } }
+	
+.footer-mid-col {
+  left: 8.25%;
+  @media (max-width: $bp4-break) {
+    left: 2%; }
+  @media (max-width: $bp3-break) {
+    left: 20%; } 
+  @media (max-width: $bp2-break) {
+    left: 0; }
+  @media (max-width: $bp1-break) {
+    top: 10px; } }
+	
+.footer-right-col { 
+  left: 0; 
+  @media (max-width: $bp4-break) {
+    left: 0; }
+  @media (max-width: $bp3-break) {
+    left: 9%; }
+  @media (max-width: $bp2-break) {
+   left: -5%; }
+  @media (max-width: $bp1-break) {
+   margin-top: 15px;
+   left: 0; } }
+	
+.footer-address,
+.footer-phone,
+.footer-email {
+  top: 10px;
+  overflow: hidden;
+  @media (max-width: $bp2-break) {
+    top: 14px; } }
+  
+.footer-contact {
+  font-family: $serif;
+  line-height: 1.5;
+  font-style: italic;
+  font-size: .75em;
+  a {
+    color: white; 
+  &:hover {
+    text-decoration: underline; } } }
+	
+// Footer Icon Fonts
+  
+.footer-icon {  
+  float: left;
+  font-style: normal; } 
+  
+.footer-icon.icon-location {
+  font-size: 2.8em;
+  top: 5px;
+  margin-right: 3px;
+  @media (max-width: $bp2-break) {
+    font-size: 2em;	} } 
+
+.footer-icon.icon-phone {
+  font-size: 2.5em;
+  top: 7px; 
+  margin-right: 5px;
+  @media (max-width: $bp2-break) {
+    font-size: 2em;	}
+  @media (max-width: $bp1-break) {
+    margin-right: 12px;	} }
+	
+.footer-icon.icon-mail {
+  font-size: 2.5em;
+  top: 8px;
+  margin-right: 12px;
+  @media (max-width: $bp2-break) {
+    font-size: 2em;	} }  
+	
+// Search
+
+.footer-search-wrap {
+  text-align: center;
+  @media (max-width: $bp2-break) {
+    text-align: left; } }	
+	
+.footer-search {
+  float: right;
+  width: 87%; 
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid $alt-gray-3;
+  font-family: $serif; 
+  font-style: italic;
+  font-size: .95em; 
+  @media (max-width: $bp4-break) {
+    width: 100%; }
+  @media (max-width: $bp3-break) {
+    width: 86%; }
+  @media (max-width: $bp2-break) {
+    float: left;
+    border-top: none;
+    padding-top: 0; }
+  @media (max-width: $bp1-break) {
+    padding-top: 5px; } }
+  
+.footer-searchbar input[type=email], .wpcf7-email {
+  margin: 0 8px 0 10px; 
+  padding: 5px 10px;
+  width: 230px;
+  font-family: $sans-serif; 
+  color: $light-gray-alt;
+  font-size: .8em;
+  @include border-radius(4px);
+  @media (max-width: $bp4-break) {
+	width: 210px; }
+  @media (max-width: $bp2-break) {
+    margin: 0 5px 0 0; }
+  @media (max-width: $bp1-break) {
+    width: 200px;
+    margin: 0 5px 10px 0; }
+  @media (max-width: 340px) {
+    width: 175px;
+    margin: 0 5px 15px 0; }	}
+  
+.footer-search-wrap .wpcf7-submit {
+  padding: 5px 8px;
+  font-family: $sans-serif;
+  font-weight: 700;
+  color: $red;
+  font-size: .83em;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, .9);
+  @include border-radius(4px); }

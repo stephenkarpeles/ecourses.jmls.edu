@@ -1,0 +1,108 @@
+// Homepage
+
+.home-aside {
+  padding-left: 1.25em;
+  border-left: 4px solid $light-gray;
+  @media (max-width: $bp2-break) {
+    padding-left: 0; 
+	border-left: 0; } }
+	
+.video iframe {
+  border: 1px solid $light-gray; }
+	
+.video-caption {
+  text-align: center;
+  padding: 10px 0 0;
+  font-size: .9em;
+  @media (max-width: $bp2-break) {
+    text-align: left; } }
+	
+.home-member-badge {
+  width: 310px;
+  max-width: 100%;
+  margin: 0 auto;
+  @media (max-width: $bp2-break) {
+     width: 290px;
+	 margin-top: 1.75em; }   }
+	
+.home-form {
+  @media (max-width: $bp2-break ) {
+    display: none; } }
+	
+.home-form input[type=email], .home-form .wpcf7-email {
+  margin: 0 8px 11px 0; 
+  padding: 5px 10px;
+  width: 70%;
+  font-family: $sans-serif; 
+  color: $light-gray-alt;
+  font-size: .8em;
+  @include border-radius(4px);
+  @media (max-width: $bp4-break) {
+	width: 100%; }
+  @media (max-width: $bp3-break) {
+	width: 100%; }	}
+
+// Content
+	
+.content {
+  clear: both; }
+	
+.content ul, .content ol {
+  margin: 0 0 1.25em 2.5em; }
+  
+.content li {
+  list-style-type: disc; }
+  
+.content ol li {
+  list-style-type: decimal; }
+  
+.post-content-spacer {
+  float: left;
+  clear: both;
+  height: 20px;  }
+  
+// Pages
+
+.page-real-title {
+  margin-bottom: .5em; }
+  
+.page-main-title {
+  border-bottom: 1px solid $light-gray;
+  padding-bottom: 15px; }
+  
+// Program Pages
+  
+.program-banner-wrap {
+  margin-bottom: 1.5em; }
+ 
+.program-banner {
+  position: relative; }
+  
+.program-banner img {
+  border: 1px solid #d1d1d1; }
+  
+.program-banner-overlay {
+  position: absolute;
+  float: left;
+  z-index: 100; 
+  bottom: 1.15em;   
+  left: 1px;  
+  padding: 10px 22px;
+  background: $red;
+  background: rgba(170, 0, 0, .95);
+  font-weight: 700;
+  font-size: 1.65em; 
+  border: $light-gray;  
+  color: white;
+  @media (max-width: $bp3-break) {
+    font-size: 1.5em;
+	bottom: .9em; }
+  @media (max-width: $bp2-break) {
+    font-size: 1.45em;
+	bottom: .85em; } }
+	
+// Miscellaneous
+
+.bdr-bot-1 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $light-gray; }

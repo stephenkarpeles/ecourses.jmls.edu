@@ -1,0 +1,14 @@
+.wrap, .footer-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1032px;
+  @media (max-width: $bp1-break) {
+    max-width: 31em; } }
+
+.main {
+  margin-bottom: 5px; }
+  
+.clear {
+  clear: both; }	
+
+	

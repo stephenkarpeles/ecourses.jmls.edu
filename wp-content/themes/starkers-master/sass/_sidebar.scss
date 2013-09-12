@@ -1,0 +1,66 @@
+.sidebar ul {
+  margin: 0; }
+  
+.sidebar li {
+  padding: 12px 0 12px 15px;
+  line-height: 1.325;
+  list-style-type: none;
+  @media (max-width: $bp3-break) {
+    padding: 12px 0 12px 10px; }
+  @media (max-width: $bp2-break) {
+    padding: 12px 0 12px 0; }	}
+	
+.sidebar a:first-child li {
+  border-top: 1px solid $light-gray; }
+  
+.sidebar li:last-child {
+  border-bottom: 1px solid $light-gray; }
+  
+.sidebar-icon {
+  float: left;
+  width: 20px;
+  margin-right: 17px;
+  font-size: 1.2em;
+  @media (max-width: $bp2-break) {
+    margin-right: 15px; } }
+  
+.icon-open-book { 
+  top: 1px;
+  @media (max-width: $bp1-break) {
+    top: -1px; } }
+  
+.icon-laptop    { 
+  font-size: 1.3em;
+  @media (max-width: $bp1-break) {
+    top: -2px; }  }
+  
+.icon-people    { 
+  bottom: 1px; 
+  font-size: 1.35em;
+  @media (max-width: $bp1-break) {
+    top: -1px; } }
+  
+.icon-cursor { 
+  left: 2px; 
+  top: 1px;
+  @media (max-width: $bp1-break) {
+    top: 0; }  }
+	
+.phone-sidebar .icon-phone { 
+  left: 2px;
+  bottom: 1px;
+  font-size: 1.275em;
+  @media (max-width: $bp1-break) {
+    top: -2px; }  }
+	
+.phone-sidebar {
+  color: $red;
+  cursor: default; }
+
+.sidebar-item { overflow: hidden; } // Prevent text from wrapping around icon
+
+.sidebar-page {
+  padding-left: 2em;
+  @media (max-width: $bp4-break) {
+    padding-left: 0; } }
+  

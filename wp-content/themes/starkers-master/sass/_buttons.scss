@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 4px 15px;
+  @include border-radius(4px);
+  &:active {
+    position: relative;
+	bottom: -1px; } }  
+  
+.btn-1,
+.footer-search-wrap .wpcf7-submit {
+  border-top: 1px solid $alt-gray;
+  border-left: 1px solid darken($alt-gray, 10%);
+  border-right: 1px solid darken($alt-gray, 10%);
+  border-bottom: 1px solid darken($alt-gray, 10%);  
+  background: #f1f1f1; 
+  @include background(linear-gradient($top-gray-1, $bot-gray-1));  
+  @include box-shadow(rgba(0,0,0,.1) 1px 1px 4px);
+  &:hover {
+    @include background(linear-gradient(darken($top-gray-1, 3%), darken($bot-gray-1, 3%))); } }

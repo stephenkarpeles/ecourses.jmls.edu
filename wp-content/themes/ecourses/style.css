@@ -1,0 +1,885 @@
+/*
+Theme Name: eCourses
+Theme URI: http://eCourses.jmls.edu/
+Description: Custom WP theme for the eCourses website
+Author: Tori Kirk tkirk@jmls.edu
+Version: 1.0
+Tags: jmls, grey, white, red, two-columns, fixed-width, microformats,editor-style
+*/
+
+/* 
+  html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+  html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, figure, footer, header, 
+hgroup, nav, section { display:block; }
+
+nav ul { list-style:none; }
+
+blockquote, q { quotes:none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+
+/* tables still need cellspacing="0" in the markup */
+table { border-collapse:collapse; border-spacing:0; }
+
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+
+input, select { vertical-align:middle; }
+/* END RESET CSS */
+
+
+/*
+fonts.css from the YUI Library: developer.yahoo.com/yui/
+          Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
+
+There are three custom edits:
+ * remove arial, helvetica from explicit font stack
+ * make the line-height relative and unit-less
+ * remove the pre, code styles
+*/
+body { font:12px sans-serif; *font-size:small; *font:x-small; line-height:1.22; }
+
+table { font-size:inherit; font:100%; }
+
+select, input, textarea { font:99% sans-serif; }
+
+
+/* normalize monospace sizing 
+ * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
+ */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+ 
+
+
+/* 
+ * minimal base styles 
+ */
+
+
+/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
+body, select, input, textarea { color:#444; }
+
+/* Headers (h1,h2,etc) have no default font-size or margin,
+   you'll want to define those yourself. */ 
+ 
+/* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
+
+/* maxvoltar.com/archive/-webkit-font-smoothing */
+html { -webkit-font-smoothing: antialiased; }
+
+ 
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active { outline: none; }
+
+a, a:active, a:visited { color:#222; }
+a:hover { color:#222; }
+
+
+ul { margin-left:30px; }
+ol { margin-left:30px; list-style-type: decimal; }
+
+small { font-size:85%; }
+strong, th { font-weight: bold; }
+
+td, td img { vertical-align:top; } 
+
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+
+
+/* align checkboxes, radios, text inputs with their label
+   by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+/* hand cursor on clickable input elements */
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+
+/* These selection declarations have to be separate.
+   No text-shadow: twitter.com/miketaylr/status/12228805301 
+   Also: hot pink. */
+::-moz-selection{ background: #fff501; color:#222; text-shadow: none; }
+::selection { background:#fff501; color:#222; text-shadow: none; } 
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+
+/* always force a scrollbar in non-IE */
+html { overflow-y: scroll; }
+
+/* make buttons play nice in IE:    
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ */
+button {  width: auto; overflow: visible; }
+ 
+/* bicubic resizing for non-native sized IMG: 
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+
+/* 
+ * Non-semantic helper classes 
+ */
+
+/* for image replacement */
+.ir { display:block; text-indent:-999em; overflow:hidden; background-repeat: no-repeat; }
+
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display:none; visibility:hidden; } 
+
+/* Hide only visually, but have it available for screenreaders 
+   www.webaim.org/techniques/css/invisiblecontent/ 
+   Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal! */
+.visuallyhidden { position:absolute !important;    
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* >> The Magnificent CLEARFIX << */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }
+
+
+
+
+
+ /* Primary Styles
+    Author: 
+ */
+
+
+/* Structural and tag overrides */
+
+body {
+	background: #ccc url(images/page_bg.jpg) repeat-x fixed top;
+	text-align: center;
+	color: #222;
+}
+
+#wrapper {
+	width:900px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.clear {
+	clear:both;
+	height:0;
+	line-height:0;
+	font-size:0;
+}
+
+h1#site-title {
+	width: 432px;
+	height: 66px;
+	background:url(images/ecoursesLogo.jpg) no-repeat;
+	text-indent: -100000px;
+	float: left; margin: 15px 0 10px 40px;
+}
+
+
+
+
+
+/* Header Styles */
+
+#header { background: url(images/background_head.png) repeat-y; }
+#logo { float: left; margin: 15px 0 10px 20px; }
+#headerContact {
+	margin: 15px 40px 8px 0;
+	float: right;
+	text-align:right;
+	font-weight: bold;
+	font-size: 1.17em;
+	line-height: 1.6em;
+}
+
+
+/* Navigation Styles */
+
+#nav {
+	background:url(images/background_nav.png) no-repeat;
+	padding-top: 13px;
+	height: 48px;
+	text-align: center;
+}
+
+.subpage #nav {
+	background:url(images/background_nav_subpage.png) no-repeat;
+	padding-top: 17px;
+	height: 63px;
+	text-align: center;
+}
+
+
+#nav ul li {
+	display: inline;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 0 8px;
+	list-style: none;
+	font-size: 1.17em;
+	font-weight: bold;
+}
+
+#nav ul li.apply {
+	border-right: none;
+	background:url(images/navMouseIcon.png) no-repeat 8px 0;
+	padding-left:23px;
+}
+
+#nav ul li a {
+	color: #fff;
+	text-decoration: none;	
+}
+
+
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+
+
+/* Superfish Skin */
+.sf-menu {
+	float:			left;
+	margin-left: 	80px;
+	
+}
+
+.sf-menu li li a {
+	padding: 		.75em 1em;
+	text-decoration:none;
+	font-size: .8em;
+}
+
+.sf-menu li ul {
+	background-image: none;
+	background-color: #333;
+	border: 1px solid #000;
+	padding-right: 15px;
+}
+
+.sf-menu li li, .sf-menu li ul li  {
+	text-align:		left;
+	padding: 		0;
+	border-top: 1px solid #000;
+}
+.sf-menu li li li {
+	background:		#333;
+}
+.sf-menu li li:hover, .sf-menu li li.sfHover,
+.sf-menu il li a:focus, .sf-menu li li a:hover, .sf-menu li li a:active {
+	background:		#222;
+	outline:		0;
+}
+
+
+
+
+
+
+/* Footer Styles */
+
+#footer {
+	background:url(images/background_footer.png) repeat-y;
+	height: 125px;
+	color: #fff;
+}
+
+#footer a { color: #fff; text-decoration: none; }
+
+#footerTop {
+	background:url(images/footer_top.png);
+	height:1px;
+}
+
+#footerLinks {
+	float: left;
+	margin: 15px 0 10px 50px;
+}
+
+#footerContact {
+	float: right;
+	text-align: right;
+	margin: 15px 40px 8px 0;
+	line-height: 1.7em;
+}
+
+
+
+
+
+
+/* Body Styles */
+
+#content {
+	background:url(images/background_body.png) repeat-y;
+}
+
+.subpage #content {
+	background:url(images/background_body_subpage.png) repeat-y;
+}
+
+
+
+#homePageBody {
+	float: left;
+	padding-top: 10px;
+	width: 562px;
+}
+
+
+#videoContainer {
+	margin-left: 60px;
+}
+
+#videoNavContainer {
+	margin: 20px 0 10px 54px;
+}
+
+.videoNav {
+	float:left;
+	margin-right: 12px;
+	width: 160px;
+}
+
+.videoNav p {
+	padding: 5px 0 0 10px;
+	line-height: 1.2em;
+	color: #222;
+	font-size: 0.92em;
+	margin-bottom:0px;
+}
+
+.videoNavLast {
+	margin-right: 0;
+}
+
+#homeBlocksContainer {
+	margin: 10px 0 0 54px;
+	padding-bottom: 30px;
+}
+
+.homeBlock {
+	background:url(images/homeBox_background.png) repeat-y;
+	width: 244px;
+	float: left;
+	margin: 10px 0;
+}
+
+.homeBlockLeft {
+	margin-right: 18px;
+}
+
+.homeBlockHeader {
+	background:url(images/homeBox_header.png) no-repeat;
+	height:66px;
+	color: #222;
+	padding: 6px 12px 0 ;
+}
+
+.homeBlockHeader h1 {
+	font-size: 0.92em;
+	margin-bottom: 0px;
+}
+
+.homeBlockHeader h4 {
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 6px 0 0 0;
+	line-height: 1.2em;
+}
+
+.homeBlockHeaderSingle h4{
+	padding-top: 10px;
+}
+
+.homeBlock p {
+	padding: 0 8px 0 15px;
+	line-height: 1.1em;
+	display: block;
+	height: 80px;
+}
+
+.homeBlock a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.homeBoxButton {
+	display: block;
+	padding-top: 4px;
+	height: 35px;
+	width: 103px;
+	background:url(images/homeBoxButton_bg.png) no-repeat;
+	color: #fff;
+	float: right;
+	margin: 0 6px 6px 0;
+	text-align: center;
+	line-height: 1.2em;
+}
+
+.homeBoxButton a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+a.boxButton, a.boxButton:visited {
+	display: block;
+	padding-top: 4px;
+	height: 35px;
+	width: 103px;
+	background:url(images/homeBoxButton_bg.png) no-repeat;
+	color: #fff;
+	margin: 0 6px 6px 0;
+	text-align: center;
+	line-height: 1.2em;
+	color: #fff;
+	text-decoration: none;
+	margin: 10px auto;
+}
+
+
+
+.homeBlockFooter {
+	clear: right;
+	background:url(images/homeBox_footer.png) no-repeat;
+	height: 2px;
+}
+
+#homePageSide {
+	float: right;
+	width: 307px;
+	padding-top: 10px;
+	
+}
+
+#homePageSide .headerSmall {
+	height: 48px;
+	background:url(images/sidebarHeaderSmall.png) no-repeat;
+	color: #fff;
+	padding-left: 12px;
+	padding-top: 6px;
+}
+
+#homePageSide .headerLarge {
+	height: 60px;
+	background:url(images/sidebarHeaderLarge.png) no-repeat;
+	color: #fff;
+	padding-left: 12px;
+	padding-top: 6px;
+}
+
+#homePageSide .headerLarge h1 {
+	font-size: 0.8em;	
+}
+
+#homePageSide h4, #subPageSide h4 { font-size: 1.17em; margin:0px; line-height: 1em; }
+#homePageSide span { font-size: 0.9em; margin:0px; padding: 0px; }
+
+
+.homePageSideContainer {
+	padding: 0 45px 15px 20px;
+	line-height: 1.3em;
+}
+
+.homePageSideEmailContainer {
+	padding: 0 45px 10px 20px;
+	line-height: 1.1em;
+}
+
+
+.homePageSideContainer p { margin-bottom: 10px; }
+
+
+.homeSocialMediaLinks {
+	padding: 0 40px 25px 20px;
+	margin: 0px;
+}
+
+.homeSocialMediaLinks ul {
+	border: medium none;
+	display: block;
+	list-style-position: outside;
+	list-style-type: none;
+	padding: 0;
+	margin: 0px;
+	z-index: 6;
+	height: 40px;
+}
+
+.homeSocialMediaLinks ul li {
+	float: left;
+	margin: 0px;
+	padding: 0px 9px 0px 0px;
+	width: 40px;
+	height: 40px;
+}
+
+.homeSocialMediaLinks ul li a {
+	display: block;
+	float: left;
+	height: 40px;
+	padding: 0px;
+	text-indent: -9999px;
+	width: 40px;
+}
+
+.socialFacebook { background:url(images/social_icons/facebook-logo-square.png) no-repeat; }
+.socialYouTube { background:url(images/social_icons/you-tube2-s.png) no-repeat; }
+.socialTwitter { background:url(images/social_icons/twitter-logo-square.png) no-repeat; }
+.socialLinkedIn { background:url(images/social_icons/linkedin-logo-square2.png) no-repeat; }
+.socialEmailus { background:url(images/social_icons/mail-square.png) no-repeat }
+
+
+
+
+#subPageBody {
+	float: left;
+	padding-top: 10px;
+	width: 650px;
+}
+
+#subPageBody a { color: #990000; }
+
+
+#subPageSide {
+	float: right;
+	width: 220px;
+	padding-top: 10px;
+}
+
+#subPageSide .header {
+	height: 54px;
+	background:url(images/sidebarHeaderSubpage.png) no-repeat;
+	color: #fff;
+	padding-left: 12px;
+	padding-top: 6px;
+}
+
+#subPageSide .sideContainer {
+	padding: 0 45px 25px 20px;
+	line-height: 1.1em;
+}
+
+#subPageSide .sideContainer p {
+	margin-bottom: 10px;
+}
+
+#sideBarPrograms { }
+
+#sideBarPrograms a {
+	text-decoration: none;
+}
+
+#sideBarPrograms .sideProgramUnselected {
+	height: 105px;
+	text-align: center;
+	background:url(images/sidebarUnselectedBG.png) no-repeat;
+	margin-left: 20px;
+	margin-right: 45px;
+	font-size:1em;
+	z-index: 1;
+}
+
+#sideBarPrograms .sideProgramSelected {
+	background:url(images/sidebarSelectedProgramBlock.png) no-repeat;
+	height: 107px;
+	padding-bottom: 23px;
+	margin-bottom: -35px;
+	text-align: center;
+	font-size:1.1em;
+	z-index: 100;
+}
+
+#sideBarPrograms h5 { padding-top: 6px; }
+
+#sideBarPrograms .sideProgramSelected h4, #sideBarPrograms .sideProgramSelected a { color: #fff; }
+#sideBarPrograms .sideProgramSelected h4, #sideBarPrograms .sideProgramSelected h5 { color: #fff; }
+
+#sideBarPrograms .after { background: none; }
+
+.pageTitle { margin-left: 55px; margin-bottom: 10px; }
+.pageTitle h1 { font-size:1.2em; color: #343434; margin-bottom:2px; }
+.pageTitle h2 { font-size:1.75em; }
+.pageTitle h3 { font-size:1.17em; }
+
+
+
+
+#subPageContentFrame {
+	margin-left: 55px;
+	margin-bottom: 10px;
+	min-height: 585px;
+}
+
+#subPageContent {
+	border-top: 1px solid #adadad;
+	border-right: 1px solid #adadad;
+	display: inline-block;
+	width: 370px;
+	height:	505px;
+	overflow: auto;
+	padding:10px 15px;
+	float:left;
+}
+
+#subPageContentWide {
+	border-top: 1px solid #adadad;
+	display: inline-block;
+	width: 552px;
+	min-height:	505px;
+	padding:10px 15px;
+	float:left;
+}
+
+#subPageContent p, #subPageContentWide p {
+	margin-bottom: 8px;	
+}
+
+#subPageContentWide ul ,#subPageContentWide ol {
+	margin-bottom: 10px;	
+}
+
+#subPageContentWide dt {
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+#subPageContentWide dd {
+	padding-left: 15px;
+	margin: 0 0 10px 0;
+}
+
+
+#subPageContentWide h2 {
+	margin: 15px 0 10px;
+	font-size:1.3em;	
+}
+
+#subPageContentWide .newsPost h2 { margin-bottom: 5px; }
+#subPageContentWide .newsPost small { font-size:90%; color: #232323; }
+#subPageContentWide .newsPost .entry { margin-top: 5px; }
+
+#subPageContentNav {
+	display: inline-block;
+}
+
+#subPageContanteNavHead {
+	background:url(images/programInfo_header.png) no-repeat;
+	padding: 8px 0 0 0;
+	text-align: center;
+	font-size: 1.17em;
+	font-weight:bold;
+	color: #fff;
+	width: 182px;
+	height:26px;
+}
+
+#subPageContentNav ul { margin: 0 0 15px 0; }
+
+#subPageContentNav ul ul { margin: 0; }
+#subPageContentNav ul ul li { margin: 0; }
+
+#subPageContentNav ul li {
+	list-style-type: none;
+	display: block;
+	padding: 3px 15px;
+	margin-top: 8px;
+}
+
+#subPageContent p {
+	margin-bottom: 1em;
+}
+
+#subPageLowerTag {
+	width: 620px;
+	height: 77px;
+	color: #fff;
+	font-size:1.1em;
+	font-weight: bold;
+	background:url(images/subpage_leftLowerBG.png) no-repeat;
+	padding: 16px 0 0 20px;
+}
+
+
+.headshot {
+	border: 1px solid #222;
+	margin: 0 10px 10px 0;
+	float:left;
+	clear: both;
+}
+
+
+.singleLower {
+	background: #EEE;
+	border: 1px solid #ccc;
+	margin: 0 10px 20px 50px;
+	padding: 0px;
+}
+
+.singleLower ul { margin: 0 0 15px 0; }
+
+.singleLower ul ul { margin: 0; }
+.singleLower ul ul li { margin: 0; }
+
+.singleLower ul li {
+	list-style-type: none;
+	display: block;
+	padding: 3px 15px;
+	margin-top: 8px;
+}
+
+.wpcf7 {
+	float:left;
+	width: 350px;
+}
+
+
+/* 
+ * print styles
+ * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ */
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none; }
+
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+
+  a:after { content: " (" attr(href) ")"; } 
+
+  abbr:after { content: " (" attr(title) ")"; }
+  
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  
+  img { page-break-inside: avoid; }
+
+  @page { margin: 0.5cm; }
+
+  p, h2, h3 { orphans: 3; widows: 3; }
+
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+
+/*
+ * Media queries for responsive design
+ */
+
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+  
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */
+  
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+  
+  
+  /* Prevent iOS, WinMobile from adjusting font size */
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
+}

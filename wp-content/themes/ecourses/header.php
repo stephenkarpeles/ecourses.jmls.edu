@@ -78,7 +78,7 @@
 		<!--<a href="index.php"><img src="images/ecoursesLogo.jpg" align="eDegrees.jmls Dynamic Graduate Law Degrees - Anytime, Anywhere" id="logo" /></a>-->
 			<div id="headerContact">
 				<a href="http://www.jmls.edu"><img src="<?php bloginfo('template_directory'); ?>/images/jmlsLogoSmall.jpg" /></a><br />
-				<img src="<?php bloginfo('template_directory'); ?>/images/icon_phone.jpg" /> Call us in Chicago at 1.800.276.0003<br />
+				<img src="<?php bloginfo('template_directory'); ?>/images/icon_phone.jpg" /> Call us in Chicago at <!--1.800.276.0003-->1.866.460.2022<br />
 				<img src="<?php bloginfo('template_directory'); ?>/images/icon_envelope.jpg" /> Email us at <a href="/contact/">ecourses@jmls.edu</a></div>
 			<div class="clear"></div>
 		</div>

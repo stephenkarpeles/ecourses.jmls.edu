@@ -1,0 +1,161 @@
+.logo-wrap {
+  padding-top: 30px;
+  position: relative;
+  z-index: 8000;
+  @media (max-width: $bp3-break) {
+    padding-top: 26px; }
+  @media (max-width: $bp2-break) {
+    padding-top: 19px; }
+  @media (max-width: $bp1-break) {
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 10px; }	}
+
+.logo {
+  background: url('../images/logo-1.svg') no-repeat; 
+  width: 385px;
+  height: 64px;
+  @media (max-width: $bp3-break) {
+    background: url('../images/logo-2.svg') no-repeat;
+	width: 330px;
+	height: 55px; }
+  @media (max-width: $bp2-break) {
+    background: url('../images/logo-3.svg') no-repeat;
+	width: 254px;
+	height: 42px; }
+  @media (max-width: $bp-tiny-break) {
+    background: url('../images/logo-4.svg') no-repeat;
+	width: 202px;
+	height: 33px; }	} 
+	
+.no-svg .logo {
+	background: url('../images/logo-1.png') no-repeat; 
+  @media (max-width: $bp3-break) {
+    background: url('../images/logo-2.png') no-repeat; }
+  @media (max-width: $bp2-break) {
+    background: url('../images/logo-3.png') no-repeat; }
+  @media (max-width: $bp-tiny-break) {
+    background: url('../images/logo-4.png') no-repeat; }	}
+
+.action-calls {
+  float: right;
+  padding-top: 23px;
+  @media (max-width: $bp2-break ) {
+    padding-top: 15px; }
+  @media (max-width: $bp1-break ) { 
+    float: left;
+    padding-top: 10px; } }
+  
+.header-phone, .header-email {
+  line-height: 1.25;
+  color: $red;
+  font-weight: 700;
+  font-size: .75em;
+  @media (max-width: $bp-small-break) {
+    width: 100%;}  }
+  
+.header-phone{ 
+  float: left;
+  margin-left: 8px;
+  @media (max-width: $bp2-break) {
+    margin-left: 0; } }
+  
+.header-email, {
+  float: right;
+  @media (max-width: $bp1-break) {
+    margin-left: 15px; }
+  @media (max-width: $bp-small-break) {
+	float: left;
+    margin: 7px 0 5px; } } 
+  
+.header-phone-text, .header-email-text {
+  float: right;
+  @media (min-width: $bp2-break) and (max-width: $bp3-break) {
+    font-size: .95em; }
+  @media (max-width: $bp-small-break) {
+	float: left; } }
+  
+.header-email-text {
+  position: relative;
+  z-index: 1000; }
+
+.search-form {
+  clear: both;
+  position: relative;
+  z-index: 1000; /* Allow user to use input field */
+  padding-top: 13px;
+  @media (max-width: $bp3-break ) {
+    padding-top: 7px; }
+  @media (max-width: $bp1-break ) {
+    padding-top: 11px; }	}
+  
+.main-search input[type=email], .main-search .wpcf7-email {
+  width: 232px;
+  padding: 5px 10px;
+  margin-right: 3px;
+  border: 1px solid $alt-gray-2;
+  font-size: .8em;
+  color: $light-gray-alt;
+  @include border-radius(3px);
+  @media (max-width: $bp3-break ) {
+    width: 205px;
+    font-size: .9em; }
+  @media (max-width: $bp2-break ) {
+    width: 160px; }	}
+	
+// Contact Form 7 
+	
+.ajax-loader {
+  display: none; }
+	
+.main-search .wpcf7-submit, .home-form .wpcf7-submit {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  position: relative;
+  top: -1px;	 
+  padding: 5px 8px;
+  cursor: pointer;
+  background-color: #900;
+  border-top: 1px solid #7e0000;
+  border-right: 1px solid #740000;
+  border-bottom: 1px solid #700000;
+  border-left: 1px solid #740000;	
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(100, 100, 100, 1);
+  font-weight: 700;
+  color: #fff;
+  font-size: .75em;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b00000), color-stop(100%, #900));
+  background-image: -webkit-linear-gradient(top, #b00 0%, #900 100%);
+  background-image:    -moz-linear-gradient(top, #b00 0%, #900 100%);
+  background-image:     -ms-linear-gradient(top, #b00 0%, #900 100%);
+  background-image:      -o-linear-gradient(top, #b00 0%, #900 100%);
+  background-image:         linear-gradient(top, #b00 0%, #900 100%);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+  	   -o-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+  		  box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);	 
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+  	   -o-border-radius: 4px;
+  		  border-radius: 4px;
+  @media (max-width: 300px) {
+    display: block;
+	margin-top: 3px; } }
+
+.main-search .wpcf7-submit:hover, .main-search .wpcf7-submit:active {
+  background: #b00;
+  border-top: 1px solid #860000;
+  border-right: 1px solid #830000;
+  border-bottom: 1px solid #780000;
+  border-left: 1px solid #830000;	
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d00000), color-stop(100%, #900));
+  background-image: -webkit-linear-gradient(top, #e00000 0%, #a00000 100%);
+  background-image:    -moz-linear-gradient(top, #e00000 0%, #a00000 100%);
+  background-image:     -ms-linear-gradient(top, #e00000 0%, #a00000 100%);
+  background-image:      -o-linear-gradient(top, #e00000 0%, #a00000 100%);
+  background-image:         linear-gradient(top, #e00000 0%, #a00000 100%);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 5px rgba(100, 100, 100, 0.5);
+     -moz-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 5px rgba(100, 100, 100, 0.5);
+       -o-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 5px rgba(100, 100, 100, 0.5);
+  		  box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 5px rgba(100, 100, 100, 0.5); }

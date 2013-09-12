@@ -1,0 +1,30 @@
+* { @include box-sizing(border-box); }
+
+body {
+  background: url('../images/bg_blocks.png') repeat;
+  border-top: 8px solid $red;
+  font-size: 1em;
+  color: $main-gray;
+  line-height: 1.45;
+  @media (max-width: $bp2-break) {
+    font-size: 95%;
+    line-height: 1.4; } }
+  
+a {
+  color: $red;
+  text-decoration: none;
+  &:hover { color: $main-gray; } }
+  
+img {
+  max-width: 100%;
+  height: auto; }
+  
+input, textarea, input[type="password"], input[type="search"], isindex {
+  -webkit-appearance: textfield;
+  padding: 1px;
+  background-color: white;
+  border: 1px solid $alt-gray-2;
+  border-image: initial;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  cursor: auto; }
