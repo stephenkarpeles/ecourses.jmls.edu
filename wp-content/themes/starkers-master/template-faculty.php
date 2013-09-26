@@ -55,7 +55,9 @@
 			
 			<div class="grid-col bp1-col-1-2 bp3-col-1-4">			
 				<div class="featured-degree mar-bot-10">
-					<h4 class="mar-top-1 bdr-bot-1">Intellectual Property Law</h4>				
+					<h4 class="mar-top-1 bdr-bot-1">Intellectual Property Law</h4>	
+					<p><strong><a href="http://www.jmls.edu/directory/profiles/long-doris/" target="blank">Doris E. Long</a></strong><br>
+					<em>Director</em></p>					
 					<p><strong><a href="http://www.jmls.edu/directory/profiles/mcgrath-william/" target="blank">William T. McGrath</a></strong><br>
 					<em>Associate Director</em></p>
 					<p><strong><a href="http://www.ngelaw.com/jmuraff/" target="blank">James P. Muraff</a></strong><br>
