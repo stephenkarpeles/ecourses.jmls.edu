@@ -2164,6 +2164,57 @@ footer div.wpcf7-response-output {
   clear: both;
 }
 
+/* line 1, ../sass/_slideout.scss */
+.slideout {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  z-index: 9999;
+}
+
+/* line 7, ../sass/_slideout.scss */
+.slideout-tab {
+  position: relative;
+  right: -415px;
+  /* width of .slideout-content minus width of .slideout-tab */
+  height: 150px;
+  width: 35px;
+  cursor: pointer;
+  border-top: 1px solid #850000;
+  border-left: 1px solid #850000;
+  border-bottom: 1px solid #850000;
+  background: #a00;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #aa0000), color-stop(100%, #8f0101));
+  background-image: -webkit-linear-gradient(left, #aa0000, #8f0101);
+  background-image: -moz-linear-gradient(left, #aa0000, #8f0101);
+  background-image: -o-linear-gradient(left, #aa0000, #8f0101);
+  background-image: linear-gradient(left, #aa0000, #8f0101);
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+/* line 20, ../sass/_slideout.scss */
+.slideout-tab:hover {
+  background: #a00;
+}
+
+/* line 23, ../sass/_slideout.scss */
+.slideout-content {
+  position: relative;
+  right: -450px;
+  /* equal to width of .slideout-content */
+  top: -150px;
+  /* negative value of height on .slideout-tab */
+  width: 450px;
+  background: yellow;
+  padding: 30px;
+}
+
 /* line 1, ../sass/_sidebar.scss */
 .sidebar ul {
   margin: 0;

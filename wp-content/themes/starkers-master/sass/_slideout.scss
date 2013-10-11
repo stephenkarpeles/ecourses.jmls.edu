@@ -1,0 +1,29 @@
+.slideout {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  z-index: 9999; }
+
+.slideout-tab {
+  position: relative;
+  right: -415px; /* width of .slideout-content minus width of .slideout-tab */
+  height: 150px;
+  width: 35px;   
+  cursor: pointer;  
+  border-top: 1px solid #850000;
+  border-left: 1px solid #850000;
+  border-bottom: 1px solid #850000;
+  background: #a00; 
+  @include box-shadow(rgba(white, 0.2) 1px 1px 0 inset);
+  @include background-image(linear-gradient(left, #aa0000, #8f0101)); 
+  @include border-radius(5px 0 0 5px);
+  &:hover {
+    background: #a00;} }
+
+.slideout-content {
+  position: relative;
+  right: -450px; /* equal to width of .slideout-content */
+  top: -150px; /* negative value of height on .slideout-tab */
+  width: 450px;   
+  background: yellow;
+  padding: 30px; }
