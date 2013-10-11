@@ -2175,7 +2175,7 @@ footer div.wpcf7-response-output {
 /* line 7, ../sass/_slideout.scss */
 .slideout-tab {
   position: relative;
-  right: -415px;
+  right: -365px;
   /* width of .slideout-content minus width of .slideout-tab */
   height: 150px;
   width: 35px;
@@ -2206,23 +2206,71 @@ footer div.wpcf7-response-output {
 /* line 23, ../sass/_slideout.scss */
 .slideout-content {
   position: relative;
-  right: -450px;
+  right: -400px;
   /* equal to width of .slideout-content */
   top: -150px;
   /* negative value of height on .slideout-tab */
-  width: 450px;
+  width: 400px;
   background: #dadada;
-  padding: 30px;
-  border-top: 1px solid #d1d1d1;
-  border-left: 1px solid #d1d1d1;
-  border-bottom: 1px solid #d1d1d1;
 }
 
-/* line 34, ../sass/_slideout.scss */
+/* line 30, ../sass/_slideout.scss */
 .slideout-content.show-slideout {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) -1px 3px 8px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.25) -1px 3px 8px;
-  box-shadow: rgba(0, 0, 0, 0.25) -1px 3px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) -2px 2px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) -2px 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) -2px 2px 8px;
+}
+
+/**
+* Form Section
+*/
+/* line 37, ../sass/_slideout.scss */
+.slideout-form {
+  padding: 20px 30px;
+}
+
+/* line 42, ../sass/_slideout.scss */
+.slideout-form input[type=email],
+.slideout-form input[type=text],
+textarea {
+  margin: 1px 0 0;
+  padding: 5px 10px;
+  width: 100%;
+  color: #444444;
+  font-weight: 400;
+  font-size: 1em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 51, ../sass/_slideout.scss */
+.slideout-form input[type=email]:hover,
+.slideout-form input[type=text]:hover,
+textarea:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 6px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 6px;
+  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 6px;
+}
+/* line 53, ../sass/_slideout.scss */
+.slideout-form input[type=email]:focus,
+.slideout-form input[type=text]:focus,
+textarea:focus {
+  border: 1px solid #129FEA;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
+  box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
+}
+
+/* line 57, ../sass/_slideout.scss */
+.slideout-form p {
+  font-size: .95em;
+  margin: 0 0 10px;
 }
 
 /* line 1, ../sass/_sidebar.scss */

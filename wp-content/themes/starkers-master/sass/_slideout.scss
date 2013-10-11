@@ -6,7 +6,7 @@
 
 .slideout-tab {
   position: relative;
-  right: -415px; /* width of .slideout-content minus width of .slideout-tab */
+  right: -365px; /* width of .slideout-content minus width of .slideout-tab */
   height: 150px;
   width: 35px;   
   cursor: pointer;  
@@ -22,14 +22,38 @@
 
 .slideout-content {
   position: relative;
-  right: -450px; /* equal to width of .slideout-content */
+  right: -400px; /* equal to width of .slideout-content */
   top: -150px; /* negative value of height on .slideout-tab */
-  width: 450px;   
-  background: $alt-gray-2;
-  padding: 30px;
-  border-top: 1px solid $light-gray;
-  border-left: 1px solid $light-gray;
-  border-bottom: 1px solid $light-gray; }
+  width: 400px;   
+  background: $alt-gray-2; }
 
 .slideout-content.show-slideout {
-  @include box-shadow(rgba(black, 0.25) -1px 3px 8px); }
+  @include box-shadow(rgba(black, 0.15) -2px 2px 8px); }
+
+/**
+* Form Section
+*/
+
+.slideout-form {
+  padding: 20px 30px; }
+
+.slideout-form input[type=email],
+.slideout-form input[type=text],
+textarea {
+  margin: 1px 0 0;
+  padding: 5px 10px;
+  width: 100%;
+  color: $main-gray;
+  font-weight: 400;
+  font-size: 1em;  
+  @include border-radius(4px);
+  @include transition-duration(.3s);
+  &:hover {
+    @include box-shadow(rgba(black, .05) 1px 1px 6px); }
+  &:focus {
+    border: 1px solid #129FEA;
+    @include box-shadow(rgba(black, .15) 1px 1px 2px inset); } }
+
+.slideout-form p {
+  font-size: .95em;
+  margin: 0 0 10px; }

@@ -1,7 +1,6 @@
 	jQuery(document).ready(function($) {
 		
-		// Reponsive Nav Menu
-		
+		// Reponsive Nav Menu		
 		 jQuery('#toggle-nav').click(function () {
 			 var nav = jQuery('.top-nav');
 			 if(nav.hasClass('showing')){
@@ -19,34 +18,47 @@
 		});
 		
 		
-		// Fitvids.js	
-		
+		// Fitvids.js			
 			// Target your .container, .wrapper, .post, etc.
 			jQuery(".video").fitVids();	
 
 		// Slideout Tab
 		    var toggle = false;
 		    $('.slideout-tab').click(function () {
-		   	if (toggle == false) {
-		        $('.slideout').stop().animate({
-		            /* Positive value of 'right' property on .slideout-content in _slideout.scss */
-		            'right': '450px'
-		        })		        
-		       	toggle = true;
-		       	$('.slideout-content').addClass('show-slideout');
+			   	if (toggle == false) {
+			        $('.slideout').stop().animate({
+			            /* Positive value of 'right' property on .slideout-content in _slideout.scss */
+			            'right': '400px'
+			        })		        
+			       	toggle = true;
+			       	$('.slideout-content').addClass('show-slideout');
 
-		    } else {
-		        $('.slideout').stop().animate({
-		            /* Set position back to flush right against edge of browser */
-		            'right': '0px'
-		        });
-		        toggle = false;
-		        $('.slideout-content').removeClass('show-slideout');
-		    }
-});
+			    } else {
+			        $('.slideout').stop().animate({
+			            /* Set position back to flush right against edge of browser */
+			            'right': '0px'
+			        });
+			        toggle = false;
+			        $('.slideout-content').removeClass('show-slideout');
+			    }
+			});
 
-
-
+		// Fix z-index for youtube video embedding
+			$('iframe').each(function() {
+			  var url = $(this).attr("src");
+			  if ($(this).attr("src").indexOf("?") > 0) {
+			    $(this).attr({
+			      "src" : url + "&wmode=transparent",
+			      "wmode" : "Opaque"
+			    });
+			  }
+			  else {
+			    $(this).attr({
+			      "src" : url + "?wmode=transparent",
+			      "wmode" : "Opaque"
+			    });
+			  }
+			});			
 
 	});
 
