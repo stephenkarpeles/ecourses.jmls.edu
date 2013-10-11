@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'jmlsed5_edegrees');
+define('DB_NAME', 'ecourses.jmls.edu');
 
 /** MySQL database username */
-define('DB_USER', 'jmlsed5_eduser');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'edegreesadmin123');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
