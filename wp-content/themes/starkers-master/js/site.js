@@ -31,14 +31,17 @@
 		        $('.slideout').stop().animate({
 		            /* Positive value of 'right' property on .slideout-content in _slideout.scss */
 		            'right': '450px'
-		        });
+		        })		        
 		       	toggle = true;
+		       	$('.slideout-content').addClass('show-slideout');
+
 		    } else {
 		        $('.slideout').stop().animate({
 		            /* Set position back to flush right against edge of browser */
 		            'right': '0px'
 		        });
 		        toggle = false;
+		        $('.slideout-content').removeClass('show-slideout');
 		    }
 });
 

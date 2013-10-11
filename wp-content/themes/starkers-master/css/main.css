@@ -2184,9 +2184,9 @@ footer div.wpcf7-response-output {
   border-left: 1px solid #850000;
   border-bottom: 1px solid #850000;
   background: #a00;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset;
-  -moz-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset;
-  box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
+  box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
   background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #aa0000), color-stop(100%, #8f0101));
   background-image: -webkit-linear-gradient(left, #aa0000, #8f0101);
   background-image: -moz-linear-gradient(left, #aa0000, #8f0101);
@@ -2211,8 +2211,18 @@ footer div.wpcf7-response-output {
   top: -150px;
   /* negative value of height on .slideout-tab */
   width: 450px;
-  background: yellow;
+  background: #dadada;
   padding: 30px;
+  border-top: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+/* line 34, ../sass/_slideout.scss */
+.slideout-content.show-slideout {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) -1px 3px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) -1px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) -1px 3px 8px;
 }
 
 /* line 1, ../sass/_sidebar.scss */
