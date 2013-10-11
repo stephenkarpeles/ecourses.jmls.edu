@@ -2216,9 +2216,9 @@ footer div.wpcf7-response-output {
 
 /* line 30, ../sass/_slideout.scss */
 .slideout-content.show-slideout {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) -2px 2px 8px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.15) -2px 2px 8px;
-  box-shadow: rgba(0, 0, 0, 0.15) -2px 2px 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) -3px 3px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) -3px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) -3px 3px 8px;
 }
 
 /**
@@ -2239,6 +2239,7 @@ textarea {
   color: #444444;
   font-weight: 400;
   font-size: 1em;
+  border: 1px solid #c2c2c2;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -2248,20 +2249,15 @@ textarea {
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-}
-/* line 51, ../sass/_slideout.scss */
-.slideout-form input[type=email]:hover,
-.slideout-form input[type=text]:hover,
-textarea:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 6px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 6px;
-  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
+  box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
 }
 /* line 53, ../sass/_slideout.scss */
 .slideout-form input[type=email]:focus,
 .slideout-form input[type=text]:focus,
 textarea:focus {
-  border: 1px solid #129FEA;
+  border: 1px solid #129fea;
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
@@ -2271,6 +2267,19 @@ textarea:focus {
 .slideout-form p {
   font-size: .95em;
   margin: 0 0 10px;
+}
+
+/* line 62, ../sass/_slideout.scss */
+input[type="text"] {
+  -webkit-appearance: textfield;
+}
+
+/* line 69, ../sass/_slideout.scss */
+input[type=text]::-webkit-search-decoration,
+input[type=text]::-webkit-search-cancel-button,
+input[type=text]::-webkit-search-results-button,
+input[type=text]::-webkit-search-results-decoration {
+  display: none;
 }
 
 /* line 1, ../sass/_sidebar.scss */

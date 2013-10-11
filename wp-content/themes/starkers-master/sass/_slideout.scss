@@ -28,7 +28,7 @@
   background: $alt-gray-2; }
 
 .slideout-content.show-slideout {
-  @include box-shadow(rgba(black, 0.15) -2px 2px 8px); }
+  @include box-shadow(rgba(black, 0.4) -3px 3px 8px); }
 
 /**
 * Form Section
@@ -46,14 +46,26 @@ textarea {
   color: $main-gray;
   font-weight: 400;
   font-size: 1em;  
+  border: 1px solid $alt-gray;
   @include border-radius(4px);
   @include transition-duration(.3s);
-  &:hover {
-    @include box-shadow(rgba(black, .05) 1px 1px 6px); }
+  @include box-shadow(rgba(black, .05) 1px 1px 2px inset); 
   &:focus {
-    border: 1px solid #129FEA;
+    border: 1px solid #129fea;
     @include box-shadow(rgba(black, .15) 1px 1px 2px inset); } }
 
 .slideout-form p {
   font-size: .95em;
   margin: 0 0 10px; }
+
+
+  input[type="text"] {
+  -webkit-appearance: textfield;
+}
+
+input[type=text]::-webkit-search-decoration,
+input[type=text]::-webkit-search-cancel-button,
+input[type=text]::-webkit-search-results-button,
+input[type=text]::-webkit-search-results-decoration {
+  display: none;
+}

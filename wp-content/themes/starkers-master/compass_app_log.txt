@@ -3211,3 +3211,47 @@ Load paths:
 2013-10-11 15:21:45 overwrite css/main.css 
 2013-10-11 15:22:16 overwrite css/main.css 
 2013-10-11 15:22:19 overwrite css/main.css 
+2013-10-11 15:58:39 overwrite css/main.css 
+2013-10-11 15:58:45 overwrite css/main.css 
+2013-10-11 15:59:02 overwrite css/main.css 
+2013-10-11 15:59:08 overwrite css/main.css 
+2013-10-11 15:59:14 overwrite css/main.css 
+2013-10-11 15:59:16 overwrite css/main.css 
+2013-10-11 15:59:29 overwrite css/main.css 
+2013-10-11 15:59:49 overwrite css/main.css 
+2013-10-11 15:59:59 overwrite css/main.css 
+2013-10-11 16:00:11 overwrite css/main.css 
+2013-10-11 16:00:12 overwrite css/main.css 
+2013-10-11 16:00:14 identical css/main.css 
+2013-10-11 16:00:20 overwrite css/main.css 
+2013-10-11 16:00:29 overwrite css/main.css 
+2013-10-11 16:01:36 overwrite css/main.css 
+2013-10-11 16:02:12 overwrite css/main.css 
+2013-10-11 16:02:17 overwrite css/main.css 
+2013-10-11 16:02:43 overwrite css/main.css 
+2013-10-11 16:03:18 overwrite css/main.css 
+2013-10-11 16:04:34     error sass/main.scss (Line 54 of sass/_slideout.scss: Colors must have either three or six digits: '#a')
+2013-10-11 16:04:34 overwrite css/main.css 
+2013-10-11 16:04:45 overwrite css/main.css 
+2013-10-11 16:05:17     error sass/main.scss (Line 54 of sass/_slideout.scss: Undefined variable: "$bot-gray1".)
+2013-10-11 16:05:17 overwrite css/main.css 
+2013-10-11 16:05:18 overwrite css/main.css 
+2013-10-11 16:05:52 overwrite css/main.css 
+2013-10-11 16:06:07     error sass/main.scss (Line 49 of sass/_slideout.scss: Undefined variable: "$alt-gray-1".)
+2013-10-11 16:06:07 overwrite css/main.css 
+2013-10-11 16:06:15 overwrite css/main.css 
+2013-10-11 16:06:46 overwrite css/main.css 
+2013-10-11 16:07:14     error sass/main.scss (Line 57 of sass/_slideout.scss: Invalid CSS after "... 2px inset); } ": expected selector or at-rule, was "}")
+2013-10-11 16:07:14 overwrite css/main.css 
+2013-10-11 16:07:16     error sass/main.scss (Line 57 of sass/_slideout.scss: Invalid CSS after "... 2px inset); } ": expected selector or at-rule, was "}")
+2013-10-11 16:07:16 identical css/main.css 
+2013-10-11 16:07:21 overwrite css/main.css 
+2013-10-11 16:07:44 overwrite css/main.css 
+2013-10-11 16:08:19 overwrite css/main.css 
+2013-10-11 16:09:53 overwrite css/main.css 
+2013-10-11 16:21:22 overwrite css/main.css 
+2013-10-11 16:21:26 overwrite css/main.css 
+2013-10-11 16:21:30 overwrite css/main.css 
+2013-10-11 16:22:17 overwrite css/main.css 
+2013-10-11 16:23:46 overwrite css/main.css 
+2013-10-11 16:35:49 overwrite css/main.css 
