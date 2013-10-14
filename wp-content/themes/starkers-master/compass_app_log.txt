@@ -3319,3 +3319,44 @@ Load paths:
 2013-10-14 14:44:04 overwrite css/main.css 
 2013-10-14 14:44:14 overwrite css/main.css 
 2013-10-14 14:45:08 overwrite css/main.css 
+2013-10-14 14:56:57 overwrite css/main.css 
+2013-10-14 14:57:13 overwrite css/main.css 
+2013-10-14 14:57:31 overwrite css/main.css 
+2013-10-14 14:57:41 overwrite css/main.css 
+2013-10-14 14:57:50 overwrite css/main.css 
+2013-10-14 14:58:00 overwrite css/main.css 
+2013-10-14 14:58:07 overwrite css/main.css 
+2013-10-14 14:58:22     error sass/main.scss (Line 51 of sass/_header.scss: Invalid CSS after "  font-weight": expected ";", was ": 700;")
+2013-10-14 14:58:22 overwrite css/main.css 
+2013-10-14 14:58:24 overwrite css/main.css 
+2013-10-14 14:58:45 overwrite css/main.css 
+2013-10-14 14:59:00 identical css/main.css 
+2013-10-14 14:59:04 overwrite css/main.css 
+2013-10-14 14:59:10 overwrite css/main.css 
+2013-10-14 14:59:18 overwrite css/main.css 
+2013-10-14 14:59:41 overwrite css/main.css 
+2013-10-14 15:00:02 overwrite css/main.css 
+2013-10-14 15:00:18 overwrite css/main.css 
+2013-10-14 15:03:15     error sass/main.scss (Line 74 of sass/_header.scss: Invalid CSS after "  &:hover ": expected "{", was "}")
+2013-10-14 15:03:15 overwrite css/main.css 
+2013-10-14 15:03:23     error sass/main.scss (Line 74 of sass/_header.scss: Invalid CSS after "  &:hover ": expected "{", was "}")
+2013-10-14 15:03:23 identical css/main.css 
+2013-10-14 15:03:36     error sass/main.scss (Line 74 of sass/_header.scss: Invalid CSS after "  &:hover ": expected "{", was "}")
+2013-10-14 15:03:36 identical css/main.css 
+2013-10-14 15:04:01 overwrite css/main.css 
+2013-10-14 15:04:12 overwrite css/main.css 
+2013-10-14 15:04:27 overwrite css/main.css 
+2013-10-14 15:04:39 overwrite css/main.css 
+2013-10-14 15:04:53 overwrite css/main.css 
+2013-10-14 15:05:02 overwrite css/main.css 
+2013-10-14 15:05:44 overwrite css/main.css 
+2013-10-14 15:06:01 overwrite css/main.css 
+2013-10-14 15:06:03 identical css/main.css 
+2013-10-14 15:06:53 overwrite css/main.css 
+2013-10-14 15:07:12 overwrite css/main.css 
+2013-10-14 15:07:27 overwrite css/main.css 
+2013-10-14 15:07:32 overwrite css/main.css 
+2013-10-14 15:07:38 overwrite css/main.css 
+2013-10-14 15:07:40 overwrite css/main.css 
+2013-10-14 15:07:45 overwrite css/main.css 
+2013-10-14 15:08:04 overwrite css/main.css 

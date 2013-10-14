@@ -1864,16 +1864,17 @@ footer div.wpcf7-response-output {
   }
 }
 
-/* line 48, ../sass/_header.scss */
-.header-phone, .header-email {
+/* line 49, ../sass/_header.scss */
+.header-phone,
+.header-email {
   line-height: 1.25;
-  color: #aa0000;
   font-weight: 700;
   font-size: .9em;
 }
 @media (max-width: 320px) {
-  /* line 48, ../sass/_header.scss */
-  .header-phone, .header-email {
+  /* line 49, ../sass/_header.scss */
+  .header-phone,
+  .header-email {
     width: 100%;
   }
 }
@@ -1912,59 +1913,73 @@ footer div.wpcf7-response-output {
 /* line 71, ../sass/_header.scss */
 .header-icon {
   float: left;
-  font-size: 1.9em;
+  color: #aa0000;
+  font-size: 1.95em;
 }
 
-/* line 75, ../sass/_header.scss */
+/* line 76, ../sass/_header.scss */
 .header-icon.icon-phone {
-  margin-top: 3px;
+  margin-top: 2px;
   margin-right: 7px;
 }
 @media (min-width: 724px) and (max-width: 900px) {
-  /* line 75, ../sass/_header.scss */
+  /* line 76, ../sass/_header.scss */
   .header-icon.icon-phone {
     margin-top: 1px;
     margin-right: 4px;
   }
 }
 
-/* line 82, ../sass/_header.scss */
+/* line 83, ../sass/_header.scss */
 .header-icon.icon-mail {
-  margin-top: 3px;
-  margin-right: 11px;
+  margin-top: 2px;
+  margin-right: 13px;
 }
 @media (min-width: 724px) and (max-width: 900px) {
-  /* line 82, ../sass/_header.scss */
+  /* line 83, ../sass/_header.scss */
   .header-icon.icon-mail {
     margin-top: 1px;
     margin-right: 8px;
   }
 }
 
-/* line 89, ../sass/_header.scss */
-.header-phone-text, .header-email-text {
+/* line 91, ../sass/_header.scss */
+.header-phone-text,
+.header-email-text {
   float: right;
+  color: #666666;
 }
 @media (min-width: 724px) and (max-width: 900px) {
-  /* line 89, ../sass/_header.scss */
-  .header-phone-text, .header-email-text {
+  /* line 91, ../sass/_header.scss */
+  .header-phone-text,
+  .header-email-text {
     font-size: .95em;
   }
 }
 @media (max-width: 320px) {
-  /* line 89, ../sass/_header.scss */
-  .header-phone-text, .header-email-text {
+  /* line 91, ../sass/_header.scss */
+  .header-phone-text,
+  .header-email-text {
     float: left;
   }
 }
 
-/* line 96, ../sass/_header.scss */
+/* line 99, ../sass/_header.scss */
+.header-email-text a {
+  color: #666666;
+}
+/* line 101, ../sass/_header.scss */
+.header-email-text a:hover, .header-email-text a:active {
+  color: #aa0000;
+}
+
+/* line 104, ../sass/_header.scss */
 .header-email-text {
   position: relative;
   z-index: 1000;
 }
 
-/* line 100, ../sass/_header.scss */
+/* line 108, ../sass/_header.scss */
 .search-form {
   clear: both;
   position: relative;
@@ -1973,19 +1988,19 @@ footer div.wpcf7-response-output {
   padding-top: 13px;
 }
 @media (max-width: 900px) {
-  /* line 100, ../sass/_header.scss */
+  /* line 108, ../sass/_header.scss */
   .search-form {
     padding-top: 7px;
   }
 }
 @media (max-width: 636px) {
-  /* line 100, ../sass/_header.scss */
+  /* line 108, ../sass/_header.scss */
   .search-form {
     padding-top: 11px;
   }
 }
 
-/* line 110, ../sass/_header.scss */
+/* line 118, ../sass/_header.scss */
 .main-search input[type=email], .main-search .wpcf7-email {
   width: 232px;
   padding: 5px 10px;
@@ -2000,20 +2015,20 @@ footer div.wpcf7-response-output {
   border-radius: 3px;
 }
 @media (max-width: 900px) {
-  /* line 110, ../sass/_header.scss */
+  /* line 118, ../sass/_header.scss */
   .main-search input[type=email], .main-search .wpcf7-email {
     width: 205px;
     font-size: .9em;
   }
 }
 @media (max-width: 724px) {
-  /* line 110, ../sass/_header.scss */
+  /* line 118, ../sass/_header.scss */
   .main-search input[type=email], .main-search .wpcf7-email {
     width: 160px;
   }
 }
 
-/* line 126, ../sass/_header.scss */
+/* line 134, ../sass/_header.scss */
 .ajax-loader {
   display: none;
 }
