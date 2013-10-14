@@ -2193,7 +2193,7 @@ footer div.wpcf7-response-output {
   border-top: 1px solid #850000;
   border-left: 1px solid #850000;
   border-bottom: 1px solid #850000;
-  background: #a00;
+  background: #900;
   -webkit-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
   -moz-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
   box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
@@ -2210,10 +2210,15 @@ footer div.wpcf7-response-output {
 }
 /* line 20, ../sass/_slideout.scss */
 .slideout-tab:hover {
-  background: #a00;
+  background: #b00;
 }
 
 /* line 23, ../sass/_slideout.scss */
+.slideout-tab-text {
+  margin: 14px 0 0 7px;
+}
+
+/* line 26, ../sass/_slideout.scss */
 .slideout-content {
   position: relative;
   top: -150px;
@@ -2222,7 +2227,7 @@ footer div.wpcf7-response-output {
   background: #dadada;
 }
 
-/* line 29, ../sass/_slideout.scss */
+/* line 32, ../sass/_slideout.scss */
 .slideout-content.show-slideout {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) -3px 3px 8px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) -3px 3px 8px;
@@ -2232,12 +2237,12 @@ footer div.wpcf7-response-output {
 /**
 * Form Section
 */
-/* line 36, ../sass/_slideout.scss */
+/* line 39, ../sass/_slideout.scss */
 .slideout-form {
   padding: 20px 30px;
 }
 
-/* line 41, ../sass/_slideout.scss */
+/* line 44, ../sass/_slideout.scss */
 .slideout-form input[type=email],
 .slideout-form input[type=text],
 textarea {
@@ -2263,7 +2268,7 @@ textarea {
   -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
   box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
 }
-/* line 54, ../sass/_slideout.scss */
+/* line 57, ../sass/_slideout.scss */
 .slideout-form input[type=email]:focus,
 .slideout-form input[type=text]:focus,
 textarea:focus {
@@ -2273,7 +2278,7 @@ textarea:focus {
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
 }
 
-/* line 58, ../sass/_slideout.scss */
+/* line 61, ../sass/_slideout.scss */
 .slideout-form p {
   font-size: .95em;
   margin: 0 0 10px;
