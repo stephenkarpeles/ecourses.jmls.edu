@@ -2722,6 +2722,7 @@ footer {
   font-family: Georgia, "Times New Roman", "Times", serif;
   font-style: italic;
   font-size: .95em;
+  color: #555765;
 }
 @media (max-width: 1076px) {
   /* line 145, ../sass/_footer.scss */
@@ -2750,7 +2751,7 @@ footer {
   }
 }
 
-/* line 165, ../sass/_footer.scss */
+/* line 166, ../sass/_footer.scss */
 .footer-searchbar input[type=email], .wpcf7-email {
   margin: 0 8px 0 10px;
   padding: 5px 10px;
@@ -2765,33 +2766,33 @@ footer {
   border-radius: 4px;
 }
 @media (max-width: 1076px) {
-  /* line 165, ../sass/_footer.scss */
+  /* line 166, ../sass/_footer.scss */
   .footer-searchbar input[type=email], .wpcf7-email {
     width: 210px;
   }
 }
 @media (max-width: 724px) {
-  /* line 165, ../sass/_footer.scss */
+  /* line 166, ../sass/_footer.scss */
   .footer-searchbar input[type=email], .wpcf7-email {
     margin: 0 5px 0 0;
   }
 }
 @media (max-width: 636px) {
-  /* line 165, ../sass/_footer.scss */
+  /* line 166, ../sass/_footer.scss */
   .footer-searchbar input[type=email], .wpcf7-email {
     width: 200px;
     margin: 0 5px 10px 0;
   }
 }
 @media (max-width: 340px) {
-  /* line 165, ../sass/_footer.scss */
+  /* line 166, ../sass/_footer.scss */
   .footer-searchbar input[type=email], .wpcf7-email {
     width: 175px;
     margin: 0 5px 15px 0;
   }
 }
 
-/* line 184, ../sass/_footer.scss */
+/* line 185, ../sass/_footer.scss */
 .footer-search-wrap .wpcf7-submit {
   padding: 5px 8px;
   font-family: Arial, "Helvetica", sans-serif;

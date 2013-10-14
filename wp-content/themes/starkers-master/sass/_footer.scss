@@ -150,7 +150,8 @@ footer {
   border-top: 1px solid $alt-gray-3;
   font-family: $serif; 
   font-style: italic;
-  font-size: .95em; 
+  font-size: .95em;
+  color: $alt-gray-3; 
   @media (max-width: $bp4-break) {
     width: 100%; }
   @media (max-width: $bp3-break) {
