@@ -49,21 +49,3 @@
 .icon-menu {
   top: 1px;
   margin-right: 10px; }
-  
-.header-icon {
-  float: left;
-  font-size: 1.8em; }
-
-.header-icon.icon-phone {
-  margin-top: 3px;
-  margin-right: 7px;
-  @media (min-width: $bp2-break) and (max-width: $bp3-break) {
-    margin-top: 1px;
-	margin-right: 4px; } }
-  
-.header-icon.icon-mail {
-  margin-top: 3px;
-  margin-right: 11px;
-  @media (min-width: $bp2-break) and (max-width: $bp3-break) {
-    margin-top: 1px;
-	margin-right: 8px; } }

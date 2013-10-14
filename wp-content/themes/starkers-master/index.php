@@ -83,12 +83,14 @@
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cba-members-badge.png" alt="CBA Members Discount">
 					</a>	
 				</div>
-				
+
+				<!--				
 				<div class="home-form">
 				    <hr class="mar-top-6">
 				    <h4 class="mar-top-4">Request Information:</h4>
 				    <?php echo do_shortcode( '[contact-form-7 id="217" title="Home RFI"]' ); ?>
 				</div>
+				-->
 				
 			</aside>
 		</div>

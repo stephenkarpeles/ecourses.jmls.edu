@@ -856,38 +856,6 @@ Twitter	: http://twitter.com/mattberridge
   margin-right: 10px;
 }
 
-/* line 53, ../sass/_icon-fonts.scss */
-.header-icon {
-  float: left;
-  font-size: 1.8em;
-}
-
-/* line 57, ../sass/_icon-fonts.scss */
-.header-icon.icon-phone {
-  margin-top: 3px;
-  margin-right: 7px;
-}
-@media (min-width: 724px) and (max-width: 900px) {
-  /* line 57, ../sass/_icon-fonts.scss */
-  .header-icon.icon-phone {
-    margin-top: 1px;
-    margin-right: 4px;
-  }
-}
-
-/* line 64, ../sass/_icon-fonts.scss */
-.header-icon.icon-mail {
-  margin-top: 3px;
-  margin-right: 11px;
-}
-@media (min-width: 724px) and (max-width: 900px) {
-  /* line 64, ../sass/_icon-fonts.scss */
-  .header-icon.icon-mail {
-    margin-top: 1px;
-    margin-right: 8px;
-  }
-}
-
 /* line 3, ../sass/_helpers.scss */
 .mar-bot-0 {
   margin-bottom: 0;
@@ -1880,7 +1848,7 @@ footer div.wpcf7-response-output {
 /* line 39, ../sass/_header.scss */
 .action-calls {
   float: right;
-  padding-top: 23px;
+  padding-top: 46px;
 }
 @media (max-width: 724px) {
   /* line 39, ../sass/_header.scss */
@@ -1901,7 +1869,7 @@ footer div.wpcf7-response-output {
   line-height: 1.25;
   color: #aa0000;
   font-weight: 700;
-  font-size: .75em;
+  font-size: .9em;
 }
 @media (max-width: 320px) {
   /* line 48, ../sass/_header.scss */
@@ -1925,6 +1893,7 @@ footer div.wpcf7-response-output {
 /* line 62, ../sass/_header.scss */
 .header-email {
   float: right;
+  margin-left: 20px;
 }
 @media (max-width: 636px) {
   /* line 62, ../sass/_header.scss */
@@ -1940,30 +1909,62 @@ footer div.wpcf7-response-output {
   }
 }
 
-/* line 70, ../sass/_header.scss */
+/* line 71, ../sass/_header.scss */
+.header-icon {
+  float: left;
+  font-size: 1.9em;
+}
+
+/* line 75, ../sass/_header.scss */
+.header-icon.icon-phone {
+  margin-top: 3px;
+  margin-right: 7px;
+}
+@media (min-width: 724px) and (max-width: 900px) {
+  /* line 75, ../sass/_header.scss */
+  .header-icon.icon-phone {
+    margin-top: 1px;
+    margin-right: 4px;
+  }
+}
+
+/* line 82, ../sass/_header.scss */
+.header-icon.icon-mail {
+  margin-top: 3px;
+  margin-right: 11px;
+}
+@media (min-width: 724px) and (max-width: 900px) {
+  /* line 82, ../sass/_header.scss */
+  .header-icon.icon-mail {
+    margin-top: 1px;
+    margin-right: 8px;
+  }
+}
+
+/* line 89, ../sass/_header.scss */
 .header-phone-text, .header-email-text {
   float: right;
 }
 @media (min-width: 724px) and (max-width: 900px) {
-  /* line 70, ../sass/_header.scss */
+  /* line 89, ../sass/_header.scss */
   .header-phone-text, .header-email-text {
     font-size: .95em;
   }
 }
 @media (max-width: 320px) {
-  /* line 70, ../sass/_header.scss */
+  /* line 89, ../sass/_header.scss */
   .header-phone-text, .header-email-text {
     float: left;
   }
 }
 
-/* line 77, ../sass/_header.scss */
+/* line 96, ../sass/_header.scss */
 .header-email-text {
   position: relative;
   z-index: 1000;
 }
 
-/* line 81, ../sass/_header.scss */
+/* line 100, ../sass/_header.scss */
 .search-form {
   clear: both;
   position: relative;
@@ -1972,19 +1973,19 @@ footer div.wpcf7-response-output {
   padding-top: 13px;
 }
 @media (max-width: 900px) {
-  /* line 81, ../sass/_header.scss */
+  /* line 100, ../sass/_header.scss */
   .search-form {
     padding-top: 7px;
   }
 }
 @media (max-width: 636px) {
-  /* line 81, ../sass/_header.scss */
+  /* line 100, ../sass/_header.scss */
   .search-form {
     padding-top: 11px;
   }
 }
 
-/* line 91, ../sass/_header.scss */
+/* line 110, ../sass/_header.scss */
 .main-search input[type=email], .main-search .wpcf7-email {
   width: 232px;
   padding: 5px 10px;
@@ -1999,20 +2000,20 @@ footer div.wpcf7-response-output {
   border-radius: 3px;
 }
 @media (max-width: 900px) {
-  /* line 91, ../sass/_header.scss */
+  /* line 110, ../sass/_header.scss */
   .main-search input[type=email], .main-search .wpcf7-email {
     width: 205px;
     font-size: .9em;
   }
 }
 @media (max-width: 724px) {
-  /* line 91, ../sass/_header.scss */
+  /* line 110, ../sass/_header.scss */
   .main-search input[type=email], .main-search .wpcf7-email {
     width: 160px;
   }
 }
 
-/* line 107, ../sass/_header.scss */
+/* line 126, ../sass/_header.scss */
 .ajax-loader {
   display: none;
 }
