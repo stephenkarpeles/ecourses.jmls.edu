@@ -27,16 +27,16 @@
 		    $('.slideout-tab').click(function () {
 			   	if (toggle == false) {
 			        $('.slideout').stop().animate({
-			            /* Positive value of 'right' property on .slideout-content in _slideout.scss */
-			            'right': '400px'
+			            /* Set position to flush against right edge */
+                        'right': '0px'
 			        })		        
 			       	toggle = true;
 			       	$('.slideout-content').addClass('show-slideout');
 
 			    } else {
 			        $('.slideout').stop().animate({
-			            /* Set position back to flush right against edge of browser */
-			            'right': '0px'
+            			/* Same as 'right' value on .slideout selector */
+            			'right': '-400px'
 			        });
 			        toggle = false;
 			        $('.slideout-content').removeClass('show-slideout');

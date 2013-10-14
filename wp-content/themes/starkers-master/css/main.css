@@ -1110,7 +1110,8 @@ img {
 
 /* line 22, ../sass/_base.scss */
 input, textarea, input[type="password"], input[type="search"], isindex {
-  -webkit-appearance: textfield;
+  -webkit-appearance: none;
+  outline: none;
   padding: 1px;
   background-color: white;
   border: 1px solid #dadada;
@@ -1716,6 +1717,77 @@ h6, .zeta {
   background: linear-gradient(#e9e9e9, #b4b4b4);
 }
 
+/* line 24, ../sass/_buttons.scss */
+.main-search .wpcf7-submit,
+.home-form .wpcf7-submit,
+.slideout-form .wpcf7-submit {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  position: relative;
+  top: -1px;
+  padding: 5px 8px;
+  cursor: pointer;
+  background-color: #900;
+  border-top: 1px solid #7e0000;
+  border-right: 1px solid #740000;
+  border-bottom: 1px solid #700000;
+  border-left: 1px solid #740000;
+  text-align: center;
+  text-shadow: 0 1px 1px #646464;
+  font-weight: 700;
+  color: #fff;
+  font-size: .75em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bb0000), color-stop(100%, #990000));
+  background-image: -webkit-linear-gradient(#bb0000, #990000);
+  background-image: -moz-linear-gradient(#bb0000, #990000);
+  background-image: -o-linear-gradient(#bb0000, #990000);
+  background-image: linear-gradient(#bb0000, #990000);
+  -webkit-box-shadow: rgba(255, 155, 100, 0.4) 0 1px 0 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -moz-box-shadow: rgba(255, 155, 100, 0.4) 0 1px 0 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
+  box-shadow: rgba(255, 155, 100, 0.4) 0 1px 0 0 inset, rgba(0, 0, 0, 0.2) 0 1px 3px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+@media (max-width: 300px) {
+  /* line 24, ../sass/_buttons.scss */
+  .main-search .wpcf7-submit,
+  .home-form .wpcf7-submit,
+  .slideout-form .wpcf7-submit {
+    display: block;
+    margin-top: 3px;
+  }
+}
+
+/* line 52, ../sass/_buttons.scss */
+.main-search .wpcf7-submit:hover,
+.main-search .wpcf7-submit:active,
+.slideout-form .wpcf7-submit:hover,
+.slideout-form .wpcf7-submit:active {
+  background: #b00;
+  border-top: 1px solid #860000;
+  border-right: 1px solid #830000;
+  border-bottom: 1px solid #780000;
+  border-left: 1px solid #830000;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dd0000), color-stop(100%, #990000));
+  background-image: -webkit-linear-gradient(#dd0000, #990000);
+  background-image: -moz-linear-gradient(#dd0000, #990000);
+  background-image: -o-linear-gradient(#dd0000, #990000);
+  background-image: linear-gradient(#dd0000, #990000);
+  -webkit-box-shadow: rgba(255, 155, 100, 0.4) 0 1px 0 0 inset, rgba(100, 100, 100, 0.5) 0 1px 5px;
+  -moz-box-shadow: rgba(255, 155, 100, 0.4) 0 1px 0 0 inset, rgba(100, 100, 100, 0.5) 0 1px 5px;
+  box-shadow: rgba(255, 155, 100, 0.4) 0 1px 0 0 inset, rgba(100, 100, 100, 0.5) 0 1px 5px;
+}
+
+/* line 61, ../sass/_buttons.scss */
+.slideout-form .wpcf7-submit {
+  margin-top: 2px;
+  font-size: .85em;
+}
+
 /* line 1, ../sass/_forms.scss */
 footer div.wpcf7-response-output {
   font-family: Arial, "Helvetica", sans-serif;
@@ -1945,67 +2017,6 @@ footer div.wpcf7-response-output {
   display: none;
 }
 
-/* line 110, ../sass/_header.scss */
-.main-search .wpcf7-submit, .home-form .wpcf7-submit {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-  position: relative;
-  top: -1px;
-  padding: 5px 8px;
-  cursor: pointer;
-  background-color: #900;
-  border-top: 1px solid #7e0000;
-  border-right: 1px solid #740000;
-  border-bottom: 1px solid #700000;
-  border-left: 1px solid #740000;
-  text-align: center;
-  text-shadow: 0 1px 1px #646464;
-  font-weight: 700;
-  color: #fff;
-  font-size: .75em;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b00000), color-stop(100%, #990000));
-  background-image: -webkit-linear-gradient(top, #bb0000 0%, #990000 100%);
-  background-image: -moz-linear-gradient(top, #bb0000 0%, #990000 100%);
-  background-image: -ms-linear-gradient(top, #bb0000 0%, #990000 100%);
-  background-image: -o-linear-gradient(top, #bb0000 0%, #990000 100%);
-  background-image: linear-gradient(top, #bb0000 0%, #990000 100%);
-  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-@media (max-width: 300px) {
-  /* line 110, ../sass/_header.scss */
-  .main-search .wpcf7-submit, .home-form .wpcf7-submit {
-    display: block;
-    margin-top: 3px;
-  }
-}
-
-/* line 146, ../sass/_header.scss */
-.main-search .wpcf7-submit:hover, .main-search .wpcf7-submit:active {
-  background: #b00;
-  border-top: 1px solid #860000;
-  border-right: 1px solid #830000;
-  border-bottom: 1px solid #780000;
-  border-left: 1px solid #830000;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d00000), color-stop(100%, #990000));
-  background-image: -webkit-linear-gradient(top, #e00000 0%, #a00000 100%);
-  background-image: -moz-linear-gradient(top, #e00000 0%, #a00000 100%);
-  background-image: -ms-linear-gradient(top, #e00000 0%, #a00000 100%);
-  background-image: -o-linear-gradient(top, #e00000 0%, #a00000 100%);
-  background-image: linear-gradient(top, #e00000 0%, #a00000 100%);
-  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 5px rgba(100, 100, 100, 0.5);
-  -moz-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 5px rgba(100, 100, 100, 0.5);
-  -o-box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 5px rgba(100, 100, 100, 0.5);
-  box-shadow: inset 0 1px 0 0 rgba(255, 115, 100, 0.4), 0 1px 5px rgba(100, 100, 100, 0.5);
-}
-
 /**
  * Responsive Nav Menu
  */
@@ -2168,15 +2179,14 @@ footer div.wpcf7-response-output {
 .slideout {
   position: fixed;
   top: 25%;
-  right: 0;
+  right: -400px;
   z-index: 9999;
 }
 
 /* line 7, ../sass/_slideout.scss */
 .slideout-tab {
   position: relative;
-  right: -365px;
-  /* width of .slideout-content minus width of .slideout-tab */
+  left: -35px;
   height: 150px;
   width: 35px;
   cursor: pointer;
@@ -2206,15 +2216,13 @@ footer div.wpcf7-response-output {
 /* line 23, ../sass/_slideout.scss */
 .slideout-content {
   position: relative;
-  right: -400px;
-  /* equal to width of .slideout-content */
   top: -150px;
   /* negative value of height on .slideout-tab */
   width: 400px;
   background: #dadada;
 }
 
-/* line 30, ../sass/_slideout.scss */
+/* line 29, ../sass/_slideout.scss */
 .slideout-content.show-slideout {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) -3px 3px 8px;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) -3px 3px 8px;
@@ -2224,12 +2232,12 @@ footer div.wpcf7-response-output {
 /**
 * Form Section
 */
-/* line 37, ../sass/_slideout.scss */
+/* line 36, ../sass/_slideout.scss */
 .slideout-form {
   padding: 20px 30px;
 }
 
-/* line 42, ../sass/_slideout.scss */
+/* line 41, ../sass/_slideout.scss */
 .slideout-form input[type=email],
 .slideout-form input[type=text],
 textarea {
@@ -2240,6 +2248,8 @@ textarea {
   font-weight: 400;
   font-size: 1em;
   border: 1px solid #c2c2c2;
+  -webkit-appearance: none;
+  outline: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -2253,7 +2263,7 @@ textarea {
   -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
   box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
 }
-/* line 53, ../sass/_slideout.scss */
+/* line 54, ../sass/_slideout.scss */
 .slideout-form input[type=email]:focus,
 .slideout-form input[type=text]:focus,
 textarea:focus {
@@ -2263,23 +2273,10 @@ textarea:focus {
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
 }
 
-/* line 57, ../sass/_slideout.scss */
+/* line 58, ../sass/_slideout.scss */
 .slideout-form p {
   font-size: .95em;
   margin: 0 0 10px;
-}
-
-/* line 62, ../sass/_slideout.scss */
-input[type="text"] {
-  -webkit-appearance: textfield;
-}
-
-/* line 69, ../sass/_slideout.scss */
-input[type=text]::-webkit-search-decoration,
-input[type=text]::-webkit-search-cancel-button,
-input[type=text]::-webkit-search-results-button,
-input[type=text]::-webkit-search-results-decoration {
-  display: none;
 }
 
 /* line 1, ../sass/_sidebar.scss */
