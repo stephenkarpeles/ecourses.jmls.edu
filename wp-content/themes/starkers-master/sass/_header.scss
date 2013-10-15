@@ -38,7 +38,13 @@
 
 .action-calls {
   float: right;
-  padding-top: 47px;  
+  padding-top: 47px; 
+  font-size: .9em;
+  @media (max-width: $bp4-break) {
+    font-size: .84em; }
+  @media (max-width: $bp3-break) {
+    font-size: .825em;
+    padding-top: 40px; } 
   @media (max-width: $bp2-break ) {
     padding-top: 15px; }
   @media (max-width: $bp1-break ) { 
@@ -49,7 +55,6 @@
 .header-email {
   line-height: 1.25;  
   font-weight: 700;
-  font-size: .9em;
   @media (max-width: $bp-small-break) {
     width: 100%;}  }
   
@@ -90,11 +95,9 @@
 .header-phone-text, 
 .header-email-text {
   float: right;
-  color: $alt-gray-4;
-  @media (min-width: $bp2-break) and (max-width: $bp3-break) {
-    font-size: .95em; }
+  color: $alt-gray-4;  
   @media (max-width: $bp-small-break) {
-	float: left; } }
+	 float: left; } }
 
 .header-email-text a {
   color: $alt-gray-4;

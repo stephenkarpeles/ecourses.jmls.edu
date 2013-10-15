@@ -23,9 +23,6 @@ Taken from http://csswizardry.com/2011/10/the-island-object/) -- */
 /* -- Breakpoint (.bp1)
 ------------------------------------------------------------- */			
 @media only screen and (min-width: $bp1-break-plus-1) { 
-
-
-
   @include grid-setup("bp1-col");    
 }
    
