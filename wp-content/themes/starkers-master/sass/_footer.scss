@@ -36,7 +36,7 @@ footer {
       padding-bottom: 15px;
 	  border-bottom: 1px solid $alt-gray-3; } }
 	  
-// Contact section
+// Contact Section
 
 .footer-contact .grid-col {
   @media (max-width: $bp4-break) {
@@ -134,24 +134,18 @@ footer {
   margin-right: 12px;
   @media (max-width: $bp2-break) {
     font-size: 2em;	} }  
-	
-// Search
 
-.footer-search-wrap {
-  text-align: center;
-  @media (max-width: $bp2-break) {
-    text-align: left; } }	
-	
-.footer-search {
+// Footer Buttons
+
+.footer-module {
   float: right;
   width: 87%; 
   margin-top: 20px;
   padding-top: 20px;
-  border-top: 1px solid $alt-gray-3;
-  font-family: $serif; 
-  font-style: italic;
-  font-size: .95em;
-  color: $alt-gray-3; 
+  border-top: 1px solid $alt-gray-3;  
+  color: $alt-gray-3;
+    a {
+      color: $alt-gray-3; } 
   @media (max-width: $bp4-break) {
     width: 100%; }
   @media (max-width: $bp3-break) {
@@ -162,31 +156,9 @@ footer {
     padding-top: 0; }
   @media (max-width: $bp1-break) {
     padding-top: 5px; } }
-  
-.footer-searchbar input[type=email], .wpcf7-email {
-  margin: 0 8px 0 10px; 
-  padding: 5px 10px;
-  width: 230px;
-  font-family: $sans-serif; 
-  color: $light-gray-alt;
-  font-size: .8em;
-  @include border-radius(4px);
-  @media (max-width: $bp4-break) {
-	width: 210px; }
-  @media (max-width: $bp2-break) {
-    margin: 0 5px 0 0; }
-  @media (max-width: $bp1-break) {
-    width: 200px;
-    margin: 0 5px 10px 0; }
-  @media (max-width: 340px) {
-    width: 175px;
-    margin: 0 5px 15px 0; }	}
-  
-.footer-search-wrap .wpcf7-submit {
-  padding: 5px 8px;
-  font-family: $sans-serif;
-  font-weight: 700;
-  color: $red;
-  font-size: .83em;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, .9);
-  @include border-radius(4px); }
+
+.footer-btn {
+  font-family: $serif; 
+  font-style: italic;
+  font-size: .95em; }
+

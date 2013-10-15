@@ -1,5 +1,29 @@
-footer div.wpcf7-response-output {
-  font-family: $sans-serif;
-  font-style: normal;
-  margin-top: 50px;
-  color: #222; }
+input, 
+textarea, 
+input[type="password"], 
+input[type="search"], 
+isindex {
+  outline: none;
+  padding: 1px;
+  border: 1px solid $alt-gray-2;
+  border-image: initial;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  cursor: auto; }
+
+input[type="checkbox"] {
+  position: relative;
+  top: 1px;
+  margin-right: 2px; }
+
+.checkbox-label {
+  margin-bottom: 2px; }
+
+  // Contact Form 7 
+
+.wpcf7-list-item  {
+  display: block;
+  padding: 1px 0; }
+
+span.wpcf7-list-item {
+  margin-left: 0; }

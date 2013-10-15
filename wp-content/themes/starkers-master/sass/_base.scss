@@ -18,14 +18,3 @@ a {
 img {
   max-width: 100%;
   height: auto; }
-
-input, textarea, input[type="password"], input[type="search"], isindex {
-  -webkit-appearance: none;
-  outline: none;
-  padding: 1px;
-  background-color: white;
-  border: 1px solid $alt-gray-2;
-  border-image: initial;
-  -webkit-rtl-ordering: logical;
-  -webkit-user-select: text;
-  cursor: auto; }

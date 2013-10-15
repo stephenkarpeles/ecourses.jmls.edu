@@ -1076,19 +1076,6 @@ img {
   height: auto;
 }
 
-/* line 22, ../sass/_base.scss */
-input, textarea, input[type="password"], input[type="search"], isindex {
-  -webkit-appearance: none;
-  outline: none;
-  padding: 1px;
-  background-color: white;
-  border: 1px solid #dadada;
-  border-image: initial;
-  -webkit-rtl-ordering: logical;
-  -webkit-user-select: text;
-  cursor: auto;
-}
-
 /* -- Use this wrapper if you want to divide your columns -- */
 /* line 3, ../sass/_grid.scss */
 .divide-bottom {
@@ -1756,12 +1743,42 @@ h6, .zeta {
   font-size: .85em;
 }
 
-/* line 1, ../sass/_forms.scss */
-footer div.wpcf7-response-output {
-  font-family: Arial, "Helvetica", sans-serif;
-  font-style: normal;
-  margin-top: 50px;
-  color: #222;
+/* line 5, ../sass/_forms.scss */
+input,
+textarea,
+input[type="password"],
+input[type="search"],
+isindex {
+  outline: none;
+  padding: 1px;
+  border: 1px solid #dadada;
+  border-image: initial;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  cursor: auto;
+}
+
+/* line 14, ../sass/_forms.scss */
+input[type="checkbox"] {
+  position: relative;
+  top: 1px;
+  margin-right: 2px;
+}
+
+/* line 19, ../sass/_forms.scss */
+.checkbox-label {
+  margin-bottom: 2px;
+}
+
+/* line 24, ../sass/_forms.scss */
+.wpcf7-list-item {
+  display: block;
+  padding: 1px 0;
+}
+
+/* line 28, ../sass/_forms.scss */
+span.wpcf7-list-item {
+  margin-left: 0;
 }
 
 /* Sections */
@@ -1848,7 +1865,7 @@ footer div.wpcf7-response-output {
 /* line 39, ../sass/_header.scss */
 .action-calls {
   float: right;
-  padding-top: 46px;
+  padding-top: 47px;
 }
 @media (max-width: 724px) {
   /* line 39, ../sass/_header.scss */
@@ -2702,109 +2719,50 @@ footer {
 }
 
 /* line 140, ../sass/_footer.scss */
-.footer-search-wrap {
-  text-align: center;
-}
-@media (max-width: 724px) {
-  /* line 140, ../sass/_footer.scss */
-  .footer-search-wrap {
-    text-align: left;
-  }
-}
-
-/* line 145, ../sass/_footer.scss */
-.footer-search {
+.footer-module {
   float: right;
   width: 87%;
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid #555765;
-  font-family: Georgia, "Times New Roman", "Times", serif;
-  font-style: italic;
-  font-size: .95em;
+  color: #555765;
+}
+/* line 147, ../sass/_footer.scss */
+.footer-module a {
   color: #555765;
 }
 @media (max-width: 1076px) {
-  /* line 145, ../sass/_footer.scss */
-  .footer-search {
+  /* line 140, ../sass/_footer.scss */
+  .footer-module {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  /* line 145, ../sass/_footer.scss */
-  .footer-search {
+  /* line 140, ../sass/_footer.scss */
+  .footer-module {
     width: 86%;
   }
 }
 @media (max-width: 724px) {
-  /* line 145, ../sass/_footer.scss */
-  .footer-search {
+  /* line 140, ../sass/_footer.scss */
+  .footer-module {
     float: left;
     border-top: none;
     padding-top: 0;
   }
 }
 @media (max-width: 636px) {
-  /* line 145, ../sass/_footer.scss */
-  .footer-search {
+  /* line 140, ../sass/_footer.scss */
+  .footer-module {
     padding-top: 5px;
   }
 }
 
-/* line 166, ../sass/_footer.scss */
-.footer-searchbar input[type=email], .wpcf7-email {
-  margin: 0 8px 0 10px;
-  padding: 5px 10px;
-  width: 230px;
-  font-family: Arial, "Helvetica", sans-serif;
-  color: #888888;
-  font-size: .8em;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-}
-@media (max-width: 1076px) {
-  /* line 166, ../sass/_footer.scss */
-  .footer-searchbar input[type=email], .wpcf7-email {
-    width: 210px;
-  }
-}
-@media (max-width: 724px) {
-  /* line 166, ../sass/_footer.scss */
-  .footer-searchbar input[type=email], .wpcf7-email {
-    margin: 0 5px 0 0;
-  }
-}
-@media (max-width: 636px) {
-  /* line 166, ../sass/_footer.scss */
-  .footer-searchbar input[type=email], .wpcf7-email {
-    width: 200px;
-    margin: 0 5px 10px 0;
-  }
-}
-@media (max-width: 340px) {
-  /* line 166, ../sass/_footer.scss */
-  .footer-searchbar input[type=email], .wpcf7-email {
-    width: 175px;
-    margin: 0 5px 15px 0;
-  }
-}
-
-/* line 185, ../sass/_footer.scss */
-.footer-search-wrap .wpcf7-submit {
-  padding: 5px 8px;
-  font-family: Arial, "Helvetica", sans-serif;
-  font-weight: 700;
-  color: #aa0000;
-  font-size: .83em;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.9);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+/* line 160, ../sass/_footer.scss */
+.footer-btn {
+  font-family: Georgia, "Times New Roman", "Times", serif;
+  font-style: italic;
+  font-size: .95em;
 }
 
 /* line 1, ../sass/_sticky-footer.scss */
