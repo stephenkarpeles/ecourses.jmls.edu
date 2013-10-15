@@ -19,6 +19,7 @@
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* Use the following CSS code if you want to have a class per icon */
@@ -27,7 +28,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-plus, .icon-phone, .icon-page, .icon-mail, .icon-books, .icon-arrow, .icon-location, .icon-menu, .icon-nav, .icon-open-book, .icon-laptop, .icon-cursor, .icon-people {
+.icon-plus, .icon-phone, .icon-page, .icon-mail, .icon-books, .icon-arrow, .icon-location, .icon-menu, .icon-nav, .icon-open-book, .icon-laptop, .icon-cursor, .icon-people, .icon-info, .icon-pencil-pad {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -75,4 +76,10 @@ you can use the generic selector below, but it's slower:
 }
 .icon-people:before {
 	content: "\e00c";
+}
+.icon-info:before {
+	content: "\e00d";
+}
+.icon-pencil-pad:before {
+	content: "\e00e";
 }

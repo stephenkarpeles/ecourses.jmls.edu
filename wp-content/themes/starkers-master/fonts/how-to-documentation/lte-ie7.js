@@ -18,10 +18,12 @@ window.onload = function() {
 			'icon-open-book' : '&#xe009;',
 			'icon-laptop' : '&#xe00a;',
 			'icon-cursor' : '&#xe00b;',
-			'icon-people' : '&#xe00c;'
+			'icon-people' : '&#xe00c;',
+			'icon-info' : '&#xe00d;',
+			'icon-pencil-pad' : '&#xe00e;'
 		},
 		els = document.getElementsByTagName('*'),
-		i, attr, html, c, el;
+		i, attr, c, el;
 	for (i = 0; ; i += 1) {
 		el = els[i];
 		if(!el) {

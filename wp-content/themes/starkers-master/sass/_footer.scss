@@ -139,13 +139,16 @@ footer {
 
 .footer-module {
   float: right;
+  text-align: center;
   width: 87%; 
   margin-top: 20px;
   padding-top: 20px;
   border-top: 1px solid $alt-gray-3;  
-  color: $alt-gray-3;
+  color: $main-gray;
     a {
-      color: $alt-gray-3; } 
+      color: $main-gray;
+      &:hover, &:active {
+        color: $red; } } 
   @media (max-width: $bp4-break) {
     width: 100%; }
   @media (max-width: $bp3-break) {
@@ -159,6 +162,14 @@ footer {
 
 .footer-btn {
   font-family: $serif; 
-  font-style: italic;
   font-size: .95em; }
+
+.footer-btn-link {
+  margin: 0 3px;
+}
+
+.footer-btn-icon {
+  position: relative;
+  top: 1px;
+  margin-right: 7px; }
 
