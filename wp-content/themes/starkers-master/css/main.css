@@ -1952,6 +1952,12 @@ span.wpcf7-list-item {
   float: right;
   margin-left: 20px;
 }
+@media (max-width: 800px) {
+  /* line 77, ../sass/_header.scss */
+  .header-email {
+    margin-left: 18px;
+  }
+}
 @media (max-width: 636px) {
   /* line 77, ../sass/_header.scss */
   .header-email {
@@ -1966,14 +1972,14 @@ span.wpcf7-list-item {
   }
 }
 
-/* line 86, ../sass/_header.scss */
+/* line 88, ../sass/_header.scss */
 .header-icon {
   float: left;
   color: #aa0000;
   font-size: 1.95em;
 }
 @media (max-width: 800px) {
-  /* line 86, ../sass/_header.scss */
+  /* line 88, ../sass/_header.scss */
   .header-icon {
     position: relative;
     bottom: 4px;
@@ -1981,109 +1987,109 @@ span.wpcf7-list-item {
   }
 }
 @media (max-width: 636px) {
-  /* line 86, ../sass/_header.scss */
+  /* line 88, ../sass/_header.scss */
   .header-icon {
     bottom: 0;
   }
 }
 
-/* line 97, ../sass/_header.scss */
+/* line 99, ../sass/_header.scss */
 .header-icon.icon-phone {
   margin-top: 2px;
   margin-right: 7px;
 }
 @media (min-width: 724px) and (max-width: 900px) {
-  /* line 97, ../sass/_header.scss */
+  /* line 99, ../sass/_header.scss */
   .header-icon.icon-phone {
     margin-right: 5px;
   }
 }
 @media (max-width: 800px) {
-  /* line 97, ../sass/_header.scss */
+  /* line 99, ../sass/_header.scss */
   .header-icon.icon-phone {
     margin-right: 4px;
   }
 }
 @media (max-width: 636px) {
-  /* line 97, ../sass/_header.scss */
+  /* line 99, ../sass/_header.scss */
   .header-icon.icon-phone {
     margin-right: 5px;
   }
 }
 @media (max-width: 340px) {
-  /* line 97, ../sass/_header.scss */
+  /* line 99, ../sass/_header.scss */
   .header-icon.icon-phone {
     margin-right: 9px;
   }
 }
 
-/* line 109, ../sass/_header.scss */
+/* line 111, ../sass/_header.scss */
 .header-icon.icon-mail {
   margin-top: 2px;
   margin-right: 13px;
 }
 @media (min-width: 724px) and (max-width: 900px) {
-  /* line 109, ../sass/_header.scss */
+  /* line 111, ../sass/_header.scss */
   .header-icon.icon-mail {
     margin-right: 11px;
   }
 }
 @media (max-width: 800px) {
-  /* line 109, ../sass/_header.scss */
+  /* line 111, ../sass/_header.scss */
   .header-icon.icon-mail {
     margin-right: 7px;
   }
 }
 @media (max-width: 636px) {
-  /* line 109, ../sass/_header.scss */
+  /* line 111, ../sass/_header.scss */
   .header-icon.icon-mail {
     margin-right: 8px;
   }
 }
 @media (max-width: 340px) {
-  /* line 109, ../sass/_header.scss */
+  /* line 111, ../sass/_header.scss */
   .header-icon.icon-mail {
     margin-right: 9px;
   }
 }
 
-/* line 122, ../sass/_header.scss */
+/* line 124, ../sass/_header.scss */
 .header-phone-text,
 .header-email-text {
   float: right;
   color: #666666;
 }
 @media (max-width: 340px) {
-  /* line 122, ../sass/_header.scss */
+  /* line 124, ../sass/_header.scss */
   .header-phone-text,
   .header-email-text {
     float: left;
   }
 }
 
-/* line 128, ../sass/_header.scss */
+/* line 130, ../sass/_header.scss */
 .header-email-text a {
   color: #666666;
 }
-/* line 130, ../sass/_header.scss */
+/* line 132, ../sass/_header.scss */
 .header-email-text a:hover, .header-email-text a:active {
   color: #aa0000;
 }
 
-/* line 133, ../sass/_header.scss */
+/* line 135, ../sass/_header.scss */
 .header-email-text {
   position: relative;
   z-index: 1000;
 }
 
 @media (max-width: 800px) {
-  /* line 137, ../sass/_header.scss */
+  /* line 139, ../sass/_header.scss */
   .hide-text {
     display: none;
   }
 }
 
-/* line 141, ../sass/_header.scss */
+/* line 143, ../sass/_header.scss */
 .main-search input[type=email], .main-search .wpcf7-email {
   width: 232px;
   padding: 5px 10px;
@@ -2098,20 +2104,20 @@ span.wpcf7-list-item {
   border-radius: 3px;
 }
 @media (max-width: 900px) {
-  /* line 141, ../sass/_header.scss */
+  /* line 143, ../sass/_header.scss */
   .main-search input[type=email], .main-search .wpcf7-email {
     width: 205px;
     font-size: .9em;
   }
 }
 @media (max-width: 724px) {
-  /* line 141, ../sass/_header.scss */
+  /* line 143, ../sass/_header.scss */
   .main-search input[type=email], .main-search .wpcf7-email {
     width: 160px;
   }
 }
 
-/* line 157, ../sass/_header.scss */
+/* line 159, ../sass/_header.scss */
 .ajax-loader {
   display: none;
 }
@@ -2257,6 +2263,18 @@ span.wpcf7-list-item {
   margin: 0 auto;
   max-width: 1032px;
 }
+@media (max-width: 840px) {
+  /* line 1, ../sass/_layout.scss */
+  .wrap, .footer-container {
+    width: 84%;
+  }
+}
+@media (max-width: 724px) {
+  /* line 1, ../sass/_layout.scss */
+  .wrap, .footer-container {
+    width: 82%;
+  }
+}
 @media (max-width: 636px) {
   /* line 1, ../sass/_layout.scss */
   .wrap, .footer-container {
@@ -2264,12 +2282,12 @@ span.wpcf7-list-item {
   }
 }
 
-/* line 8, ../sass/_layout.scss */
+/* line 12, ../sass/_layout.scss */
 .main {
   margin-bottom: 5px;
 }
 
-/* line 11, ../sass/_layout.scss */
+/* line 15, ../sass/_layout.scss */
 .clear {
   clear: both;
 }
@@ -2913,9 +2931,15 @@ html, body {
     padding-bottom: 365px;
   }
 }
+@media (max-width: 360px) {
+  /* line 11, ../sass/_sticky-footer.scss */
+  .main {
+    padding-bottom: 375px;
+  }
+}
 
 /* must be same height as the footer */
-/* line 21, ../sass/_sticky-footer.scss */
+/* line 23, ../sass/_sticky-footer.scss */
 footer {
   position: relative;
   margin-top: -200px;
@@ -2924,23 +2948,30 @@ footer {
   clear: both;
 }
 @media (max-width: 724px) {
-  /* line 21, ../sass/_sticky-footer.scss */
+  /* line 23, ../sass/_sticky-footer.scss */
   footer {
     margin-top: -300px;
     height: 300px;
   }
 }
 @media (max-width: 636px) {
-  /* line 21, ../sass/_sticky-footer.scss */
+  /* line 23, ../sass/_sticky-footer.scss */
   footer {
     margin-top: -345px;
     height: 345px;
   }
 }
 @media (max-width: 420px) {
-  /* line 21, ../sass/_sticky-footer.scss */
+  /* line 23, ../sass/_sticky-footer.scss */
   footer {
     margin-top: -365px;
     height: 365px;
+  }
+}
+@media (max-width: 360px) {
+  /* line 23, ../sass/_sticky-footer.scss */
+  footer {
+    margin-top: -375px;
+    height: 375px;
   }
 }

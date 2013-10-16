@@ -16,7 +16,9 @@ html, body {
   @media (max-width: $bp1-break) {
     padding-bottom: 345px; }
   @media (max-width: $bp-small-break-alt) {
-    padding-bottom: 365px; } }  /* must be same height as the footer */
+    padding-bottom: 365px; }
+  @media (max-width: 360px) {
+    padding-bottom: 375px; } }  /* must be same height as the footer */
 
 footer {
   position: relative;
@@ -31,4 +33,7 @@ footer {
     height: 345px; }
   @media (max-width: $bp-small-break-alt) {
     margin-top: -365px; 
-    height: 365px; } } 
+    height: 365px; }
+  @media (max-width: 360px) {
+    margin-top: -375px; 
+    height: 375px; } } 

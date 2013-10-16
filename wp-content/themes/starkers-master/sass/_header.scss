@@ -77,6 +77,8 @@
 .header-email {
   float: right;
   margin-left: 20px;
+  @media (max-width: $bp2-break-alt-1) {
+    margin-left: 18px; }
   @media (max-width: $bp1-break) {
     margin-left: 15px; }
   @media (max-width: $bp-small-break) {
