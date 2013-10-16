@@ -396,80 +396,80 @@ table {
 }
 
 @media (max-width: 1076px) {
-  /* line 17, ../sass/_responsive.scss */
+  /* line 21, ../sass/_responsive.scss */
   .hide-below-bp4 {
     display: none;
   }
 }
 
 @media (max-width: 900px) {
-  /* line 21, ../sass/_responsive.scss */
+  /* line 25, ../sass/_responsive.scss */
   .hide-below-bp3 {
     display: none;
   }
 }
 
 @media (max-width: 724px) {
-  /* line 25, ../sass/_responsive.scss */
+  /* line 29, ../sass/_responsive.scss */
   .hide-below-bp2 {
     display: none;
   }
 }
 
 @media (max-width: 636px) {
-  /* line 29, ../sass/_responsive.scss */
+  /* line 33, ../sass/_responsive.scss */
   .hide-below-bp1 {
     display: none;
   }
 }
 
 @media (min-width: 1077px) {
-  /* line 35, ../sass/_responsive.scss */
+  /* line 39, ../sass/_responsive.scss */
   .show-below-bp4 {
     display: none;
   }
 }
 @media (max-width: 1076px) {
-  /* line 35, ../sass/_responsive.scss */
+  /* line 39, ../sass/_responsive.scss */
   .show-below-bp4 {
     display: block;
   }
 }
 
 @media (min-width: 901px) {
-  /* line 41, ../sass/_responsive.scss */
+  /* line 45, ../sass/_responsive.scss */
   .show-below-bp3 {
     display: none;
   }
 }
 @media (max-width: 900px) {
-  /* line 41, ../sass/_responsive.scss */
+  /* line 45, ../sass/_responsive.scss */
   .show-below-bp3 {
     display: block;
   }
 }
 
 @media (min-width: 725px) {
-  /* line 47, ../sass/_responsive.scss */
+  /* line 51, ../sass/_responsive.scss */
   .show-below-bp2 {
     display: none;
   }
 }
 @media (max-width: 724px) {
-  /* line 47, ../sass/_responsive.scss */
+  /* line 51, ../sass/_responsive.scss */
   .show-below-bp2 {
     display: block;
   }
 }
 
 @media (min-width: 637px) {
-  /* line 53, ../sass/_responsive.scss */
+  /* line 57, ../sass/_responsive.scss */
   .show-below-bp1 {
     display: none;
   }
 }
 @media (max-width: 636px) {
-  /* line 53, ../sass/_responsive.scss */
+  /* line 57, ../sass/_responsive.scss */
   .show-below-bp1 {
     display: block;
   }
@@ -2814,12 +2814,20 @@ footer {
     width: 86%;
   }
 }
+@media (max-width: 840px) {
+  /* line 140, ../sass/_footer.scss */
+  .footer-module {
+    padding: 15px 0 1px;
+  }
+}
 @media (max-width: 724px) {
   /* line 140, ../sass/_footer.scss */
   .footer-module {
     float: left;
+    text-align: left;
     border-top: none;
-    padding-top: 0;
+    margin-top: 10px;
+    padding: 0 0 1px;
   }
 }
 @media (max-width: 636px) {
@@ -2829,18 +2837,37 @@ footer {
   }
 }
 
-/* line 163, ../sass/_footer.scss */
+/* line 167, ../sass/_footer.scss */
 .footer-btn {
   font-family: Georgia, "Times New Roman", "Times", serif;
   font-size: .95em;
 }
+@media (max-width: 880px) {
+  /* line 167, ../sass/_footer.scss */
+  .footer-btn {
+    font-size: .8em;
+  }
+}
 
-/* line 167, ../sass/_footer.scss */
+@media (max-width: 840px) {
+  /* line 173, ../sass/_footer.scss */
+  .footer-btn-2 {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 420px) {
+  /* line 173, ../sass/_footer.scss */
+  .footer-btn-2 {
+    margin-top: 12px;
+  }
+}
+
+/* line 179, ../sass/_footer.scss */
 .footer-btn-link {
   margin: 0 3px;
 }
 
-/* line 170, ../sass/_footer.scss */
+/* line 182, ../sass/_footer.scss */
 .footer-btn-icon {
   position: relative;
   top: 1px;
@@ -2871,19 +2898,19 @@ html, body {
 @media (max-width: 724px) {
   /* line 11, ../sass/_sticky-footer.scss */
   .main {
-    padding-bottom: 305px;
+    padding-bottom: 300px;
   }
 }
 @media (max-width: 636px) {
   /* line 11, ../sass/_sticky-footer.scss */
   .main {
-    padding-bottom: 350px;
+    padding-bottom: 345px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   /* line 11, ../sass/_sticky-footer.scss */
   .main {
-    padding-bottom: 390px;
+    padding-bottom: 365px;
   }
 }
 
@@ -2899,21 +2926,21 @@ footer {
 @media (max-width: 724px) {
   /* line 21, ../sass/_sticky-footer.scss */
   footer {
-    margin-top: -305px;
-    height: 305px;
+    margin-top: -300px;
+    height: 300px;
   }
 }
 @media (max-width: 636px) {
   /* line 21, ../sass/_sticky-footer.scss */
   footer {
-    margin-top: -350px;
-    height: 350px;
+    margin-top: -345px;
+    height: 345px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   /* line 21, ../sass/_sticky-footer.scss */
   footer {
-    margin-top: -390px;
-    height: 390px;
+    margin-top: -365px;
+    height: 365px;
   }
 }
