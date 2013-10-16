@@ -3916,3 +3916,34 @@ Load paths:
 2013-10-16 14:21:01 overwrite css/main.css 
 2013-10-16 14:21:14 overwrite css/main.css 
 2013-10-16 14:21:46 identical css/main.css 
+2013-10-16 14:22:18 overwrite css/main.css 
+2013-10-16 14:23:11 overwrite css/main.css 
+2013-10-16 14:23:43 overwrite css/main.css 
+2013-10-16 14:24:14 overwrite css/main.css 
+2013-10-16 14:24:42 overwrite css/main.css 
+2013-10-16 14:24:55 overwrite css/main.css 
+2013-10-16 14:25:05 overwrite css/main.css 
+2013-10-16 14:25:33 overwrite css/main.css 
+2013-10-16 14:25:42 overwrite css/main.css 
+2013-10-16 14:25:54 overwrite css/main.css 
+2013-10-16 14:26:00 overwrite css/main.css 
+2013-10-16 14:26:19 overwrite css/main.css 
+2013-10-16 14:30:22 overwrite css/main.css 
+2013-10-16 14:31:01 overwrite css/main.css 
+2013-10-16 14:33:19 overwrite css/main.css 
+2013-10-16 14:33:45     error sass/main.scss (Line 181 of sass/_header.scss: Invalid CSS after "  display: none; }": expected "}", was "")
+2013-10-16 14:33:45 overwrite css/main.css 
+2013-10-16 14:33:53     error sass/main.scss (Line 147 of sass/_header.scss: Invalid CSS after "    color:": expected pseudoclass or pseudoelement, was " $red; }  ")
+2013-10-16 14:33:53 overwrite css/main.css 
+2013-10-16 14:34:25     error sass/main.scss (Line 149 of sass/_header.scss: Invalid CSS after "...oat: left; } } ": expected selector or at-rule, was "}")
+2013-10-16 14:34:25 overwrite css/main.css 
+2013-10-16 14:34:29 overwrite css/main.css 
+2013-10-16 14:34:41 overwrite css/main.css 
+2013-10-16 14:35:26 overwrite css/main.css 
+2013-10-16 14:36:28 overwrite css/main.css 
+2013-10-16 14:36:49 identical css/main.css 
+2013-10-16 14:37:23 overwrite css/main.css 
+2013-10-16 14:37:46 overwrite css/main.css 
+2013-10-16 14:37:53 overwrite css/main.css 
+2013-10-16 14:39:10 overwrite css/main.css 
+2013-10-16 14:40:07 overwrite css/main.css 

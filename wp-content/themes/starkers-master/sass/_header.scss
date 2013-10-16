@@ -65,7 +65,7 @@
   line-height: 1.25;  
   font-weight: 700;
   font-size: .9em;
-  @media (max-width: $bp-small-break) {
+  @media (max-width: $bp-tiny-break) {
     width: 100%; } }
   
 .header-phone { 
@@ -82,17 +82,21 @@
     margin-left: 18px; }
   @media (max-width: $bp1-break) {
     float: left;
-    margin-left: 16px; }
-  @media (max-width: $bp-small-break) {	  
+    margin-left: 15px; }
+  @media (max-width: $bp-tiny-break) {	  
     margin: 7px 0 5px; } } 
 
 .header-rfi {
   float: left;
   margin-top: 6px;
-  margin-left: 15px; }
+  margin-left: 14px;
+  @media (max-width: $bp-tiny-break) {    
+    margin: 7px 0 0; } }
 
-.header-rfi a {
-  color: $alt-gray-4; }
+.header-rfi-link {
+  color: $alt-gray-4;  
+  &:hover, &:active {
+    color: $red; } }
 
 .header-icon {
   float: left;
@@ -114,7 +118,7 @@
     margin-right: 4px; }
   @media (max-width: $bp1-break) {
     margin-right: 3px; }  
-  @media (max-width: $bp-small-break) {
+  @media (max-width: $bp-tiny-break) {
     margin-right: 9px; } }
   
 .header-icon.icon-mail {
@@ -125,21 +129,26 @@
   @media (max-width: $bp2-break-alt-1) {
     margin-right: 7px; }
   @media (max-width: $bp1-break) {
-    margin-right: 6px; }
-  @media (max-width: $bp-small-break) {
+    margin-right: 8px; }
+  @media (max-width: $bp-tiny-break) {
     margin-right: 9px; } }
 
 .header-icon.icon-info {
   position: relative;
   bottom: 3px;
-  margin-right: 5px; }
+  margin-right: 6px;
+  @media (max-width: $bp-tiny-break) {    
+    margin-right: 9px; } }
   
 .header-phone-text, 
 .header-email-text {
   float: right;
-  color: $alt-gray-4; 
+  color: $alt-gray-4;   
+  @media (max-width: $bp1-break) {
+    &:hover, &:active {
+      color: $red; } }
   @media (max-width: $bp-small-break) {
-	  float: left; } }
+	  float: left; } } 
 
 .header-email-text a {
   color: $alt-gray-4;
