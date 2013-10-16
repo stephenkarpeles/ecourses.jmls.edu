@@ -1926,7 +1926,7 @@ span.wpcf7-list-item {
   font-weight: 700;
   font-size: .9em;
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   /* line 63, ../sass/_header.scss */
   .header-phone,
   .header-email {
@@ -1958,7 +1958,7 @@ span.wpcf7-list-item {
     margin-left: 15px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   /* line 77, ../sass/_header.scss */
   .header-email {
     float: left;
@@ -2010,7 +2010,7 @@ span.wpcf7-list-item {
     margin-right: 5px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   /* line 97, ../sass/_header.scss */
   .header-icon.icon-phone {
     margin-right: 9px;
@@ -2040,7 +2040,7 @@ span.wpcf7-list-item {
     margin-right: 8px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   /* line 109, ../sass/_header.scss */
   .header-icon.icon-mail {
     margin-right: 9px;
@@ -2053,7 +2053,7 @@ span.wpcf7-list-item {
   float: right;
   color: #666666;
 }
-@media (max-width: 320px) {
+@media (max-width: 340px) {
   /* line 122, ../sass/_header.scss */
   .header-phone-text,
   .header-email-text {
