@@ -27,7 +27,7 @@
   border-right: 1px solid darken($alt-gray, 10%);
   border-bottom: 1px solid darken($alt-gray, 10%); }
 
-.slideout-form input[type="submit"] {
+input[type="submit"] {
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -53,8 +53,8 @@
     display: block;
     margin-top: 3px; } }
 
-.slideout-form input[type="submit"]:hover, 
-.slideout-form input[type="submit"]:active {
+input[type="submit"]:hover, 
+input[type="submit"]:active {
   background: #b00;
   border-top: 1px solid #860000;
   border-right: 1px solid #830000;
