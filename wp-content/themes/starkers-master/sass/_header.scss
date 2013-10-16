@@ -60,7 +60,8 @@
     padding-top: 10px; } }
   
 .header-phone, 
-.header-email {
+.header-email,
+.header-rfi {
   line-height: 1.25;  
   font-weight: 700;
   font-size: .9em;
@@ -80,10 +81,18 @@
   @media (max-width: $bp2-break-alt-1) {
     margin-left: 18px; }
   @media (max-width: $bp1-break) {
-    margin-left: 15px; }
-  @media (max-width: $bp-small-break) {
-	  float: left;
+    float: left;
+    margin-left: 16px; }
+  @media (max-width: $bp-small-break) {	  
     margin: 7px 0 5px; } } 
+
+.header-rfi {
+  float: left;
+  margin-top: 6px;
+  margin-left: 15px; }
+
+.header-rfi a {
+  color: $alt-gray-4; }
 
 .header-icon {
   float: left;
@@ -104,7 +113,7 @@
   @media (max-width: $bp2-break-alt-1) {
     margin-right: 4px; }
   @media (max-width: $bp1-break) {
-    margin-right: 5px; }  
+    margin-right: 3px; }  
   @media (max-width: $bp-small-break) {
     margin-right: 9px; } }
   
@@ -116,9 +125,14 @@
   @media (max-width: $bp2-break-alt-1) {
     margin-right: 7px; }
   @media (max-width: $bp1-break) {
-    margin-right: 8px; }
+    margin-right: 6px; }
   @media (max-width: $bp-small-break) {
     margin-right: 9px; } }
+
+.header-icon.icon-info {
+  position: relative;
+  bottom: 3px;
+  margin-right: 5px; }
   
 .header-phone-text, 
 .header-email-text {
