@@ -2352,14 +2352,52 @@ span.wpcf7-list-item {
 }
 
 /**
+ * Slideout Tab at Bottom (on mobile)
+ */
+/* line 39, ../sass/_slideout.scss */
+.slideout-tab-bottom {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  height: 32px;
+  width: 100%;
+  cursor: pointer;
+  border-top: 1px solid #850000;
+  border-left: 1px solid #850000;
+  border-bottom: 1px solid #850000;
+  background: #900;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
+  box-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0 inset, rgba(0, 0, 0, 0.2) -1px 1px 3px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #aa0000), color-stop(100%, #8f0101));
+  background-image: -webkit-linear-gradient(left, #aa0000, #8f0101);
+  background-image: -moz-linear-gradient(left, #aa0000, #8f0101);
+  background-image: -o-linear-gradient(left, #aa0000, #8f0101);
+  background-image: linear-gradient(left, #aa0000, #8f0101);
+}
+/* line 52, ../sass/_slideout.scss */
+.slideout-tab-bottom:hover {
+  background: #b00;
+}
+
+/* line 55, ../sass/_slideout.scss */
+.slideout-tab-bottom-text {
+  margin: 4px 0 0;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+/**
 * Form Section
 */
-/* line 39, ../sass/_slideout.scss */
+/* line 66, ../sass/_slideout.scss */
 .slideout-form {
   padding: 20px 30px;
 }
 
-/* line 44, ../sass/_slideout.scss */
+/* line 71, ../sass/_slideout.scss */
 .slideout-form input[type=email],
 .slideout-form input[type=text],
 textarea {
@@ -2385,7 +2423,7 @@ textarea {
   -moz-box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
   box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2px inset;
 }
-/* line 57, ../sass/_slideout.scss */
+/* line 84, ../sass/_slideout.scss */
 .slideout-form input[type=email]:focus,
 .slideout-form input[type=text]:focus,
 textarea:focus {
@@ -2395,7 +2433,7 @@ textarea:focus {
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px inset;
 }
 
-/* line 61, ../sass/_slideout.scss */
+/* line 88, ../sass/_slideout.scss */
 .slideout-form p {
   font-size: .95em;
   margin: 0 0 10px;

@@ -33,6 +33,33 @@
   @include box-shadow(rgba(black, 0.4) -3px 3px 8px); }
 
 /**
+ * Slideout Tab at Bottom (on mobile)
+ */
+
+.slideout-tab-bottom {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  height: 32px;
+  width: 100%;
+  cursor: pointer;  
+  border-top: 1px solid #850000;
+  border-left: 1px solid #850000;
+  border-bottom: 1px solid #850000;
+  background: #900; 
+  @include box-shadow(rgba(white, 0.2) 1px 1px 0 inset, rgba(black, 0.2) -1px 1px 3px);
+  @include background-image(linear-gradient(left, #aa0000, #8f0101)); 
+  &:hover {
+    background: #b00;} }
+
+.slideout-tab-bottom-text { 
+  margin: 4px 0 0;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center; }
+
+/**
 * Form Section
 */
 
