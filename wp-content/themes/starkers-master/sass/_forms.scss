@@ -11,6 +11,25 @@ isindex {
   -webkit-user-select: text;
   cursor: auto; }
 
+input[type=email],
+input[type=text],
+textarea {
+  margin: 1px 0 0;
+  padding: 5px 10px;
+  width: 100%;
+  color: $main-gray;
+  font-weight: 400;
+  font-size: 1em;  
+  border: 1px solid $alt-gray;
+  -webkit-appearance: none;
+  outline: none;
+  @include border-radius(4px);
+  @include transition-duration(.3s);
+  @include box-shadow(rgba(black, .05) 1px 1px 2px inset); 
+  &:focus {
+    border: 1px solid #129fea;
+    @include box-shadow(rgba(black, .15) 1px 1px 2px inset); } }
+
 input[type="checkbox"] {
   position: relative;
   top: 1px;
