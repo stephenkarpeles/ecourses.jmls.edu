@@ -2381,7 +2381,7 @@ span.wpcf7-list-item {
 /* line 1, ../sass/_slideout.scss */
 .slideout {
   position: fixed;
-  top: 25%;
+  top: 21%;
   right: -400px;
   z-index: 9999;
 }
