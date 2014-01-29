@@ -2218,8 +2218,6 @@ span.wpcf7-list-item {
   padding: 10px 20px;
   font-weight: 700;
   color: #aa0000;
-  position: relative;
-  z-index: 5000;
   overflow: hidden;
   border-top: 1px solid #eeeeee;
   border-left: 1px solid #eaeaea;
@@ -2235,7 +2233,7 @@ span.wpcf7-list-item {
   -moz-box-shadow: rgba(0, 0, 0, 0.025) 0 1px 3px;
   box-shadow: rgba(0, 0, 0, 0.025) 0 1px 3px;
 }
-/* line 21, ../sass/_nav.scss */
+/* line 19, ../sass/_nav.scss */
 #toggle-nav:hover, #toggle-nav:active {
   color: #444444;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #e9e9e9));
@@ -2273,38 +2271,37 @@ span.wpcf7-list-item {
 }
 
 @media (min-width: 901px) {
-  /* line 36, ../sass/_nav.scss */
+  /* line 34, ../sass/_nav.scss */
   .grid-wrap.nav-wrap {
     overflow: visible;
   }
 }
 
-/* line 40, ../sass/_nav.scss */
+/* line 38, ../sass/_nav.scss */
 .top-nav {
   display: block;
-  position: relative;
-  z-index: 500;
   text-align: center;
+  overflow: hidden;
   margin: 30px 0 28px;
   padding: 10px 0;
   border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
   font-weight: 700;
 }
-/* line 50, ../sass/_nav.scss */
+/* line 47, ../sass/_nav.scss */
 .top-nav li {
   display: inline-block;
   padding: 0 2%;
 }
 @media (max-width: 900px) {
-  /* line 50, ../sass/_nav.scss */
+  /* line 47, ../sass/_nav.scss */
   .top-nav li {
     display: block;
     padding: 7px 0;
   }
 }
 @media (max-width: 900px) {
-  /* line 40, ../sass/_nav.scss */
+  /* line 38, ../sass/_nav.scss */
   .top-nav {
     text-align: left;
     height: 0;
@@ -2315,19 +2312,19 @@ span.wpcf7-list-item {
   }
 }
 
-@media (min-width: 900px) and (max-width: 1076px) {
-  /* line 64, ../sass/_nav.scss */
+@media (min-width: 901px) and (max-width: 1076px) {
+  /* line 61, ../sass/_nav.scss */
   .top-nav .first-menu-item {
     display: none;
   }
 }
 
-/* line 68, ../sass/_nav.scss */
+/* line 65, ../sass/_nav.scss */
 .last-menu-item a {
   color: #444444;
 }
 
-/* line 71, ../sass/_nav.scss */
+/* line 68, ../sass/_nav.scss */
 #menu-top-nav ul {
   position: absolute;
   z-index: 5000;
@@ -2340,44 +2337,44 @@ span.wpcf7-list-item {
   box-shadow: rgba(0, 0, 0, 0.15) 1px 3px 3px;
 }
 
-/* line 80, ../sass/_nav.scss */
+/* line 77, ../sass/_nav.scss */
 #menu-top-nav ul li {
   width: 100%;
   padding: 8px 10px;
   border-bottom: 1px solid #ccc;
 }
 
-/* line 85, ../sass/_nav.scss */
+/* line 82, ../sass/_nav.scss */
 #menu-top-nav li:hover ul {
   z-index: 20000;
   left: 0;
 }
 
-/* line 89, ../sass/_nav.scss */
+/* line 86, ../sass/_nav.scss */
 #menu-top-nav li:hover ul a {
   color: #aa0000;
 }
 
-/* line 92, ../sass/_nav.scss */
+/* line 89, ../sass/_nav.scss */
 #menu-top-nav li:hover ul a:hover {
   color: #444444;
 }
 
 @media screen and (max-width: 900px) {
-  /* line 97, ../sass/_nav.scss */
+  /* line 94, ../sass/_nav.scss */
   .menu-top-nav-container {
     margin-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #d1d1d1;
   }
 
-  /* line 102, ../sass/_nav.scss */
+  /* line 99, ../sass/_nav.scss */
   .top-nav.showing {
     height: auto;
     padding-bottom: 15px;
   }
 
-  /* line 106, ../sass/_nav.scss */
+  /* line 103, ../sass/_nav.scss */
   .top-nav.hiding {
     height: 0;
   }
