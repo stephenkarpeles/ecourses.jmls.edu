@@ -46,12 +46,12 @@
   font-weight: 700;
     li {
       display: inline-block;
-      padding: 0 2%; 
-  @media (max-width: $bp3-break-plus-1) {
-    overflow: visible; }
-	@media (max-width: $bp3-break) {
-	  display: block;
-	  padding: 7px 0; } }
+      padding: 0 2%;  
+	   @media (max-width: $bp3-break) {
+	     display: block;
+	     padding: 7px 0; } } 
+  @media (min-width: $bp3-break-plus-1) {
+    overflow: visible; } 
   @media (max-width: $bp3-break) {
     text-align: left; 
 	  height: 0;

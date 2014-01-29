@@ -2293,17 +2293,17 @@ span.wpcf7-list-item {
   display: inline-block;
   padding: 0 2%;
 }
-@media (max-width: 901px) {
-  /* line 47, ../sass/_nav.scss */
-  .top-nav li {
-    overflow: visible;
-  }
-}
 @media (max-width: 900px) {
   /* line 47, ../sass/_nav.scss */
   .top-nav li {
     display: block;
     padding: 7px 0;
+  }
+}
+@media (min-width: 901px) {
+  /* line 38, ../sass/_nav.scss */
+  .top-nav {
+    overflow: visible;
   }
 }
 @media (max-width: 900px) {

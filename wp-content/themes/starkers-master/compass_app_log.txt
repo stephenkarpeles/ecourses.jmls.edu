@@ -4100,3 +4100,12 @@ Load paths:
 2014-01-29 13:25:22 overwrite css/main.css 
 2014-01-29 13:25:26 overwrite css/main.css 
 2014-01-29 13:25:33 identical css/main.css 
+2014-01-29 13:26:09 identical css/main.css 
+2014-01-29 13:26:46     error sass/main.scss (Line 61 of sass/_nav.scss: Invalid CSS after "...ottom: none; } ": expected selector or at-rule, was "}")
+2014-01-29 13:26:46 overwrite css/main.css 
+2014-01-29 13:26:51     error sass/main.scss (Line 54 of sass/_nav.scss: Invalid CSS after "...ding: 7px 0; } ": expected selector or at-rule, was "}")
+2014-01-29 13:26:51 overwrite css/main.css 
+2014-01-29 13:27:09 overwrite css/main.css 
+2014-01-29 13:27:25 overwrite css/main.css 
+2014-01-29 13:28:10 overwrite css/main.css 
+2014-01-29 13:28:18 overwrite css/main.css 
