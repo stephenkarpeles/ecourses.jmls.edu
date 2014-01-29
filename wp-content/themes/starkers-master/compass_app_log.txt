@@ -4109,3 +4109,29 @@ Load paths:
 2014-01-29 13:27:25 overwrite css/main.css 
 2014-01-29 13:28:10 overwrite css/main.css 
 2014-01-29 13:28:18 overwrite css/main.css 
+2014-01-29 13:52:24 overwrite css/main.css 
+2014-01-29 13:53:26 overwrite css/main.css 
+2014-01-29 13:53:34 overwrite css/main.css 
+2014-01-29 13:53:44 overwrite css/main.css 
+2014-01-29 13:53:52 overwrite css/main.css 
+2014-01-29 13:54:01 overwrite css/main.css 
+2014-01-29 13:54:08 overwrite css/main.css 
+2014-01-29 13:54:21 overwrite css/main.css 
+2014-01-29 13:54:59 overwrite css/main.css 
+2014-01-29 13:55:23 overwrite css/main.css 
+2014-01-29 13:55:34 overwrite css/main.css 
+2014-01-29 13:55:48 overwrite css/main.css 
+2014-01-29 13:56:10 overwrite css/main.css 
+2014-01-29 13:56:25 identical css/main.css 
+2014-01-29 13:57:30     error sass/main.scss (Line 80 of sass/_nav.scss: Invalid CSS after "...ion: static; } ": expected selector or at-rule, was "}")
+2014-01-29 13:57:30 overwrite css/main.css 
+2014-01-29 13:57:35 overwrite css/main.css 
+2014-01-29 13:58:16 overwrite css/main.css 
+2014-01-29 13:58:24 overwrite css/main.css 
+2014-01-29 13:58:43 overwrite css/main.css 
+2014-01-29 13:58:50 identical css/main.css 
+2014-01-29 13:59:01 overwrite css/main.css 
+2014-01-29 13:59:06 overwrite css/main.css 
+2014-01-29 13:59:41     error sass/main.scss (Line 118 of sass/_nav.scss: Invalid CSS after "}  ": expected "}", was "")
+2014-01-29 13:59:41 overwrite css/main.css 
+2014-01-29 13:59:44 overwrite css/main.css 

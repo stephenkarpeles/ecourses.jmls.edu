@@ -2292,6 +2292,7 @@ span.wpcf7-list-item {
 .top-nav li {
   display: inline-block;
   padding: 0 2%;
+  cursor: default;
 }
 @media (max-width: 900px) {
   /* line 47, ../sass/_nav.scss */
@@ -2319,18 +2320,18 @@ span.wpcf7-list-item {
 }
 
 @media (min-width: 901px) and (max-width: 1076px) {
-  /* line 63, ../sass/_nav.scss */
+  /* line 64, ../sass/_nav.scss */
   .top-nav .first-menu-item {
     display: none;
   }
 }
 
-/* line 67, ../sass/_nav.scss */
+/* line 68, ../sass/_nav.scss */
 .last-menu-item a {
   color: #444444;
 }
 
-/* line 70, ../sass/_nav.scss */
+/* line 71, ../sass/_nav.scss */
 #menu-top-nav ul {
   position: absolute;
   z-index: 5000;
@@ -2342,45 +2343,66 @@ span.wpcf7-list-item {
   -moz-box-shadow: rgba(0, 0, 0, 0.15) 1px 3px 3px;
   box-shadow: rgba(0, 0, 0, 0.15) 1px 3px 3px;
 }
+@media (max-width: 900px) {
+  /* line 71, ../sass/_nav.scss */
+  #menu-top-nav ul {
+    position: static;
+    margin-top: 7px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0) 0 0 0;
+    -moz-box-shadow: rgba(0, 0, 0, 0) 0 0 0;
+    box-shadow: rgba(0, 0, 0, 0) 0 0 0;
+  }
+}
 
-/* line 79, ../sass/_nav.scss */
+/* line 84, ../sass/_nav.scss */
 #menu-top-nav ul li {
   width: 100%;
   padding: 8px 10px;
   border-bottom: 1px solid #ccc;
 }
+@media (max-width: 900px) {
+  /* line 84, ../sass/_nav.scss */
+  #menu-top-nav ul li {
+    padding: 8px 20px;
+  }
+}
 
-/* line 84, ../sass/_nav.scss */
+/* line 91, ../sass/_nav.scss */
 #menu-top-nav li:hover ul {
   z-index: 20000;
   left: 0;
 }
 
-/* line 88, ../sass/_nav.scss */
+/* line 95, ../sass/_nav.scss */
+#menu-top-nav li:hover a {
+  color: #444444;
+}
+
+/* line 98, ../sass/_nav.scss */
 #menu-top-nav li:hover ul a {
   color: #aa0000;
 }
 
-/* line 91, ../sass/_nav.scss */
-#menu-top-nav li:hover ul a:hover {
+/* line 101, ../sass/_nav.scss */
+#menu-top-nav li:hover li a:hover {
   color: #444444;
 }
 
 @media screen and (max-width: 900px) {
-  /* line 96, ../sass/_nav.scss */
+  /* line 106, ../sass/_nav.scss */
   .menu-top-nav-container {
     margin-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #d1d1d1;
   }
 
-  /* line 101, ../sass/_nav.scss */
+  /* line 111, ../sass/_nav.scss */
   .top-nav.showing {
     height: auto;
     padding-bottom: 15px;
   }
 
-  /* line 105, ../sass/_nav.scss */
+  /* line 115, ../sass/_nav.scss */
   .top-nav.hiding {
     height: 0;
   }
