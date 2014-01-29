@@ -2272,7 +2272,7 @@ span.wpcf7-list-item {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 901px) {
   /* line 36, ../sass/_nav.scss */
   .grid-wrap.nav-wrap {
     overflow: visible;
@@ -2343,7 +2343,7 @@ span.wpcf7-list-item {
 /* line 80, ../sass/_nav.scss */
 #menu-top-nav ul li {
   width: 100%;
-  padding: 7px 10px;
+  padding: 8px 10px;
   border-bottom: 1px solid #ccc;
 }
 
