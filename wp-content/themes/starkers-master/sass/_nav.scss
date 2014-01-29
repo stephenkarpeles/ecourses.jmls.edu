@@ -77,20 +77,26 @@
   text-align: left;
   @include box-shadow(rgba(0,0,0,.15) 1px 3px 3px); 
   @media (max-width: $bp3-break) {    
-    position: static;
-    margin-top: 7px;
+    margin-top: 10px;
+    background: transparent;
     @include box-shadow(rgba(0,0,0,0) 0 0 0); } }
 
 #menu-top-nav ul li {
   width: 100%;
   padding: 8px 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;  
   @media (max-width: $bp3-break) {
     padding: 8px 20px; } }
 
+#menu-top-nav ul li:first-child { 
+  @media (max-width: $bp3-break) {
+    border-top: 1px solid #ccc; } }
+
 #menu-top-nav li:hover ul {
   z-index: 20000;
-  left: 0; }
+  left: 0; 
+  @media (max-width: $bp3-break) {
+    position: static; } }
 
 #menu-top-nav li:hover a {
   color: $main-gray; }

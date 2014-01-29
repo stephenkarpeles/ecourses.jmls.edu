@@ -2346,8 +2346,8 @@ span.wpcf7-list-item {
 @media (max-width: 900px) {
   /* line 71, ../sass/_nav.scss */
   #menu-top-nav ul {
-    position: static;
-    margin-top: 7px;
+    margin-top: 10px;
+    background: transparent;
     -webkit-box-shadow: rgba(0, 0, 0, 0) 0 0 0;
     -moz-box-shadow: rgba(0, 0, 0, 0) 0 0 0;
     box-shadow: rgba(0, 0, 0, 0) 0 0 0;
@@ -2367,42 +2367,55 @@ span.wpcf7-list-item {
   }
 }
 
-/* line 91, ../sass/_nav.scss */
+@media (max-width: 900px) {
+  /* line 91, ../sass/_nav.scss */
+  #menu-top-nav ul li:first-child {
+    border-top: 1px solid #ccc;
+  }
+}
+
+/* line 95, ../sass/_nav.scss */
 #menu-top-nav li:hover ul {
   z-index: 20000;
   left: 0;
 }
+@media (max-width: 900px) {
+  /* line 95, ../sass/_nav.scss */
+  #menu-top-nav li:hover ul {
+    position: static;
+  }
+}
 
-/* line 95, ../sass/_nav.scss */
+/* line 101, ../sass/_nav.scss */
 #menu-top-nav li:hover a {
   color: #444444;
 }
 
-/* line 98, ../sass/_nav.scss */
+/* line 104, ../sass/_nav.scss */
 #menu-top-nav li:hover ul a {
   color: #aa0000;
 }
 
-/* line 101, ../sass/_nav.scss */
+/* line 107, ../sass/_nav.scss */
 #menu-top-nav li:hover li a:hover {
   color: #444444;
 }
 
 @media screen and (max-width: 900px) {
-  /* line 106, ../sass/_nav.scss */
+  /* line 112, ../sass/_nav.scss */
   .menu-top-nav-container {
     margin-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #d1d1d1;
   }
 
-  /* line 111, ../sass/_nav.scss */
+  /* line 117, ../sass/_nav.scss */
   .top-nav.showing {
     height: auto;
     padding-bottom: 15px;
   }
 
-  /* line 115, ../sass/_nav.scss */
+  /* line 121, ../sass/_nav.scss */
   .top-nav.hiding {
     height: 0;
   }
