@@ -1,0 +1,41 @@
+<p><b>Your Name (required)</b><br />
+    [text* your-name] </p>
+
+<p><b>Your Email (required)</b><br />
+    [email* your-email] </p>
+
+<p><b>I&rsquo;m interested in earning my:</b>
+<i>LLM Degree (practicing attorneys):</i>
+[checkbox checkbox-8 "LLM in Employee Benefits" "LLM in Estate Planning" "LLM in Intellectual Property"]</p>
+<p><i>MS Degree (non-attorney professionals):</i>
+[checkbox checkbox-9 "MS in Employee Benefits" "MS in Intellectual Property"]</p>
+
+<p><b>Comments (optional)</b><br />
+    [textarea your-message] </p>
+
+<p>[submit "Send Request"]</p>
+
+
+
+
+
+MESSAGE:
+
+[your-name] has requested information about John Marshall's distance education programs. 
+
+[your-name]'s information is below:
+
+Email address: [your-email]
+Interested in: [checkbox-8] [checkbox-9]
+Comments: [your-message]
+
+Please respond promptly.
+
+--
+This e-mail was sent from a contact form on eDegrees.jmls.edu (http://ecourses.jmls.edu)
+
+
+
+
+SUBJECT:
+Request for Information | eDegrees.jmls.edu
