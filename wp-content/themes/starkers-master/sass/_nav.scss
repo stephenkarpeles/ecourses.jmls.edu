@@ -34,7 +34,8 @@
     margin: 15px 0 0; }	} 
 
 .grid-wrap.nav-wrap {
-  overflow: visible; } 
+  @media (min-width: $bp3-break) {
+    overflow: visible; } }
 
 .top-nav {  
   display: block; 
@@ -72,8 +73,9 @@
   z-index: 5000;
   left: -9999px;
   background: $alt-gray-5;
-  width: 200%;
-  text-align: left; }
+  width: 175%;
+  text-align: left;
+  @include box-shadow(rgba(0,0,0,.15) 1px 3px 3px); }
 
 #menu-top-nav ul li {
   width: 100%;
@@ -84,10 +86,10 @@
   z-index: 20000;
   left: 0; }
 
-#menu-top-nav ul li:hover a {
+#menu-top-nav li:hover ul a {
   color: $red; }
 
-#menu-top-nav ul li:hover a:hover {
+#menu-top-nav li:hover ul a:hover {
   color: $main-gray; }
 
 @media screen and (max-width: $bp3-break) {	
