@@ -83,8 +83,10 @@
 
 #menu-top-nav ul li {
   width: 100%;
-  padding: 8px 10px;
-  border-bottom: 1px solid #ccc;  
+  padding: 8px 7.45%;
+  border-bottom: 1px solid #ccc; 
+  @media (min-width: $bp3-break-plus-1) and (max-width: $bp4-break) {
+    padding: 8px 6.75%; }
   @media (max-width: $bp3-break) {
     padding: 8px 20px; } }
 
