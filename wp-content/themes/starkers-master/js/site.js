@@ -18,7 +18,7 @@
 		});
 
 		// Dropdown menu
-		jQuery('#menu-top-nav').click(function() {
+		jQuery('.dropdown-link').click(function() {
         jQuery('.sub-menu').toggleClass('visible');
     });		
 		
