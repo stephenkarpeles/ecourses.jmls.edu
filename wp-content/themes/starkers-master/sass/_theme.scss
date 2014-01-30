@@ -80,7 +80,11 @@
   
 .program-banner img {
   border: 1px solid #d1d1d1; }
+
+.program-banner-overlay {
+  display: none; }
   
+/* 
 .program-banner-overlay {
   position: absolute;
   float: left;
@@ -100,6 +104,7 @@
   @media (max-width: $bp2-break) {
     font-size: 1.45em;
 	bottom: .85em; } }
+*/
 	
 // Miscellaneous
 
