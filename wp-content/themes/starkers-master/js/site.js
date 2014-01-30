@@ -16,7 +16,11 @@
 				jQuery('.top-nav').removeClass('showing').removeClass('hiding');    
 			}
 		});
-		
+
+		// Dropdown menu
+		jQuery('#menu-top-nav').click(function() {
+        jQuery('.sub-menu').toggleClass('visible');
+    });		
 		
 		// Fitvids.js			
 			// Target your .container, .wrapper, .post, etc.

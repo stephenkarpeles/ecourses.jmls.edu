@@ -2389,35 +2389,47 @@ span.wpcf7-list-item {
 }
 
 /* line 103, ../sass/_nav.scss */
+#menu-top-nav ul.visible {
+  z-index: 20000;
+  left: 0;
+}
+@media (max-width: 900px) {
+  /* line 103, ../sass/_nav.scss */
+  #menu-top-nav ul.visible {
+    position: static;
+  }
+}
+
+/* line 109, ../sass/_nav.scss */
 #menu-top-nav li:hover a {
   color: #444444;
 }
 
-/* line 106, ../sass/_nav.scss */
+/* line 112, ../sass/_nav.scss */
 #menu-top-nav li:hover ul a {
   color: #aa0000;
 }
 
-/* line 109, ../sass/_nav.scss */
+/* line 115, ../sass/_nav.scss */
 #menu-top-nav li:hover li a:hover {
   color: #444444;
 }
 
 @media screen and (max-width: 900px) {
-  /* line 114, ../sass/_nav.scss */
+  /* line 120, ../sass/_nav.scss */
   .menu-top-nav-container {
     margin-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #d1d1d1;
   }
 
-  /* line 119, ../sass/_nav.scss */
+  /* line 125, ../sass/_nav.scss */
   .top-nav.showing {
     height: auto;
     padding-bottom: 15px;
   }
 
-  /* line 123, ../sass/_nav.scss */
+  /* line 129, ../sass/_nav.scss */
   .top-nav.hiding {
     height: 0;
   }
