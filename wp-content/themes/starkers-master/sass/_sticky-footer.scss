@@ -10,30 +10,35 @@ html, body {
 
 .main {
   overflow: hidden;
-  padding-bottom: 200px;
+  padding-bottom: 212px; /* must be same height as the footer */
+  @media (min-width: $bp2-break-plus-1) and (max-width: 960px) {
+    padding-bottom: 225px; }
   @media (max-width: $bp2-break) {
-    padding-bottom: 300px; }
+    padding-bottom: 315px; }
   @media (max-width: $bp1-break) {
-    padding-bottom: 345px; }
+    padding-bottom: 360px; }
   @media (max-width: $bp-small-break-alt) {
-    padding-bottom: 365px; }
+    padding-bottom: 385px; }
   @media (max-width: 360px) {
-    padding-bottom: 375px; } }  /* must be same height as the footer */
+    padding-bottom: 390px; } }  /* must be same height as the footer */
 
 footer {
   position: relative;
-  margin-top: -200px; /* negative value of footer height */
-  height: 200px;
+  margin-top: -212px; /* negative value of footer height */
+  height: 212px;
   clear: both; 
+  @media (min-width: $bp2-break-plus-1) and (max-width: 960px) {
+    margin-top: -225px; 
+    height: 225px; }
   @media (max-width: $bp2-break) {
-    margin-top: -300px; 
-    height: 300px; }
+    margin-top: -315px; 
+    height: 315px; }
   @media (max-width: $bp1-break) {
-    margin-top: -345px; 
-    height: 345px; }
+    margin-top: -360px; 
+    height: 360px; }
   @media (max-width: $bp-small-break-alt) {
-    margin-top: -365px; 
-    height: 365px; }
+    margin-top: -385px; 
+    height: 385px; }
   @media (max-width: 360px) {
-    margin-top: -375px; 
-    height: 375px; } } 
+    margin-top: -390px; 
+    height: 390px; } } 

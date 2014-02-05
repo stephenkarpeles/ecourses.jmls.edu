@@ -3102,67 +3102,81 @@ html, body {
 /* line 11, ../sass/_sticky-footer.scss */
 .main {
   overflow: hidden;
-  padding-bottom: 200px;
+  padding-bottom: 212px;
+  /* must be same height as the footer */
+}
+@media (min-width: 725px) and (max-width: 960px) {
+  /* line 11, ../sass/_sticky-footer.scss */
+  .main {
+    padding-bottom: 225px;
+  }
 }
 @media (max-width: 724px) {
   /* line 11, ../sass/_sticky-footer.scss */
   .main {
-    padding-bottom: 300px;
+    padding-bottom: 315px;
   }
 }
 @media (max-width: 636px) {
   /* line 11, ../sass/_sticky-footer.scss */
   .main {
-    padding-bottom: 345px;
+    padding-bottom: 360px;
   }
 }
 @media (max-width: 420px) {
   /* line 11, ../sass/_sticky-footer.scss */
   .main {
-    padding-bottom: 365px;
+    padding-bottom: 385px;
   }
 }
 @media (max-width: 360px) {
   /* line 11, ../sass/_sticky-footer.scss */
   .main {
-    padding-bottom: 375px;
+    padding-bottom: 390px;
   }
 }
 
 /* must be same height as the footer */
-/* line 23, ../sass/_sticky-footer.scss */
+/* line 25, ../sass/_sticky-footer.scss */
 footer {
   position: relative;
-  margin-top: -200px;
+  margin-top: -212px;
   /* negative value of footer height */
-  height: 200px;
+  height: 212px;
   clear: both;
 }
-@media (max-width: 724px) {
-  /* line 23, ../sass/_sticky-footer.scss */
+@media (min-width: 725px) and (max-width: 960px) {
+  /* line 25, ../sass/_sticky-footer.scss */
   footer {
-    margin-top: -300px;
-    height: 300px;
+    margin-top: -225px;
+    height: 225px;
+  }
+}
+@media (max-width: 724px) {
+  /* line 25, ../sass/_sticky-footer.scss */
+  footer {
+    margin-top: -315px;
+    height: 315px;
   }
 }
 @media (max-width: 636px) {
-  /* line 23, ../sass/_sticky-footer.scss */
+  /* line 25, ../sass/_sticky-footer.scss */
   footer {
-    margin-top: -345px;
-    height: 345px;
+    margin-top: -360px;
+    height: 360px;
   }
 }
 @media (max-width: 420px) {
-  /* line 23, ../sass/_sticky-footer.scss */
+  /* line 25, ../sass/_sticky-footer.scss */
   footer {
-    margin-top: -365px;
-    height: 365px;
+    margin-top: -385px;
+    height: 385px;
   }
 }
 @media (max-width: 360px) {
-  /* line 23, ../sass/_sticky-footer.scss */
+  /* line 25, ../sass/_sticky-footer.scss */
   footer {
-    margin-top: -375px;
-    height: 375px;
+    margin-top: -390px;
+    height: 390px;
   }
 }
