@@ -51,9 +51,6 @@
 					<p><strong><a href="http://www.linkedin.com/in/christiansengeddes" target="_blank">Sharon Christiansen</a></strong><br>
 					<em>Attorney</em></p>
 				</div>
-			</div>	
-			
-			<div class="grid-col bp1-col-1-2 bp3-col-1-4">			
 				<div class="featured-degree mar-bot-10">
 					<h4 class="mar-top-1 bdr-bot-1">Intellectual Property Law</h4>	
 					<p><strong><a href="http://www.jmls.edu/directory/profiles/long-doris/" target="blank">Doris E. Long</a></strong><br>
@@ -68,6 +65,25 @@
 					<p><strong>John Malcolm White</strong><br>
 					<em>Attorney</em><br></p>
 				</div>
+			</div>	
+			
+			<div class="grid-col bp1-col-1-2 bp3-col-1-4">			
+				<div class="featured-degree mar-bot-10">
+					<h4 class="mar-top-1 bdr-bot-1">Real Estate Law</h4>	
+					<p><strong><a href="http://www.jmls.edu/directory/profile.php?lastfirstname=Hammond_Celeste" target="blank">Celeste Hammond</a></strong><br>
+					<em>Director</em></p>					
+					<p><strong><a href="http://www.jmls.edu/directory/profile.php?lastfirstname=Harding_Virginia" target="blank">Virginia Harding</a></strong><br>
+					<em>Associate Director</em></p>
+					<p><strong><a href="http://www.freeborn.com/attorney/jordan-h-peters" target="blank">Jordan H. Peters</a></strong><br>
+					<em>Partner</em><br>
+					Freeborn &amp; Peters LLP</p>
+					<p><strong><a href="http://www.schiffhardin.com/attorneys/attorney-search/johnson-janet-m" target="blank">Janet M. Johnson</a></strong><br>
+					<em>Partner</em><br>
+					Schiff Hardin LLP</p>
+					<p><strong><a href="http://jenner.com/people/GeoffreyDavis" target="blank">Geoffrey M. Davis</a></strong><br>
+					<em>Partner</em><br>
+					Jenner &amp; Block LLP</p>
+				</div>				
 			</div>	
 		</div><!-- /.grid-wrap -->
 		
